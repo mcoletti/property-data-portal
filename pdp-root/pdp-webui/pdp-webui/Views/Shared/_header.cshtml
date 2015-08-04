@@ -1,0 +1,44 @@
+﻿
+<!--####################### header ################################## -->
+<section id="header">
+    <header>
+        <div id="header-right-col">
+            <ul id="menu-top">
+                <li>@Html.ActionLink("About", "About", "Home")</li>
+                <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                 @Html.Partial("_LoginPartial")
+                <li>@Html.ActionLink("Register for Free", "Register", "Account")</li>
+            </ul>
+@*            <a class="button" href="#">Register for Free</a>*@
+        </div>
+        <div class="clear"></div>
+    </header>
+</section>
+<!-- ################################## menu-main ########################################### -->
+<div id="menu-main">
+    <!-- ############################## container ##################################### -->
+    <div class="container">
+        <ul>
+            <li>@Html.ActionLink("Home", "Index", "Home")</li>
+            <li>@Html.ActionLink("How it Works", "HowItWorks", "Home")</li>
+            <li>@Html.ActionLink("Buyers", "Buyers", "Home")</li>
+            <li>@Html.ActionLink("Sellers", "Sellers", "Home")</li>
+            <li>@Html.ActionLink("Agents-Brokers", "AgentsBrokers", "Home")</li>
+            <li>@Html.ActionLink("News", "News", "Home")</li>
+            <li>
+                More
+                <ul>
+                    <li>@Html.ActionLink("Financing", "Financing", "Home")</li>
+                    <li>@Html.ActionLink("Property Managers", "PropertyManagers", "Home")</li>
+                    <li>@Html.ActionLink("Insurance", "Insurance", "Home")</li>
+                    <li>@Html.ActionLink("IRA's", "IRAs", "Home")</li>
+                    <li>@Html.ActionLink("Contractors", "Contractors", "Home")</li>
+                </ul>
+            </li>
+        </ul>
+        <div id="menu-main-search">
+            <input class="search" id="search" type="text" placeholder="Search for Properties ...">
+            <input type="image" src="~/Content/img/magnifier.jpg" class="magnifier" />
+        </div>
+    </div>
+</div>

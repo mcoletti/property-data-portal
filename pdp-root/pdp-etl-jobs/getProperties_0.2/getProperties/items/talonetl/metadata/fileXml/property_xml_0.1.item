@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:XmlFileConnection xmi:id="_DtwSYIkNEeKzAOY3hBFGtw" name="repository.metadataFileXml" dataPackage="_Dtyu0IkNEeKzAOY3hBFGtw" XmlFilePath="D:/properties.xml" Encoding="UTF-8">
+    <schema xmi:id="_DtyuoIkNEeKzAOY3hBFGtw" LimitBoucle="50" AbsoluteXPathQuery="/result/listings/listing/data">
+      <schemaTargets xmi:id="_DtyuoYkNEeKzAOY3hBFGtw" RelativeXPathQuery="name" TagName="name"/>
+      <schemaTargets xmi:id="_DtyuookNEeKzAOY3hBFGtw" RelativeXPathQuery="../media/images/image/url" TagName="url"/>
+      <schemaTargets xmi:id="_Dtyuo4kNEeKzAOY3hBFGtw" RelativeXPathQuery="../media/images/image/title" TagName="title"/>
+      <schemaTargets xmi:id="_DtyupIkNEeKzAOY3hBFGtw" RelativeXPathQuery="pba__propertytype__c" TagName="pba__propertytype__c"/>
+      <schemaTargets xmi:id="_DtyupYkNEeKzAOY3hBFGtw" RelativeXPathQuery="rented_status__c" TagName="rented_status__c"/>
+      <schemaTargets xmi:id="_DtyupokNEeKzAOY3hBFGtw" RelativeXPathQuery="zipcode__c" TagName="zipcode__c"/>
+      <schemaTargets xmi:id="_Dtyup4kNEeKzAOY3hBFGtw" RelativeXPathQuery="pba__city_pb__c" TagName="pba__city_pb__c"/>
+      <schemaTargets xmi:id="_DtyuqIkNEeKzAOY3hBFGtw" RelativeXPathQuery="pba__description_pb__c" TagName="pba__description_pb__c"/>
+      <schemaTargets xmi:id="_DtyuqYkNEeKzAOY3hBFGtw" RelativeXPathQuery="term_2__c" TagName="term_2__c"/>
+      <schemaTargets xmi:id="_DtyuqokNEeKzAOY3hBFGtw" RelativeXPathQuery="term_1__c" TagName="term_1__c"/>
+      <schemaTargets xmi:id="_Dtyuq4kNEeKzAOY3hBFGtw" RelativeXPathQuery="pba__status__c" TagName="pba__status__c"/>
+      <schemaTargets xmi:id="_DtyurIkNEeKzAOY3hBFGtw" RelativeXPathQuery="year_built__c" TagName="year_built__c"/>
+      <schemaTargets xmi:id="_DtyurYkNEeKzAOY3hBFGtw" RelativeXPathQuery="pba__address_pb__c" TagName="pba__address_pb__c"/>
+      <schemaTargets xmi:id="_DtyurokNEeKzAOY3hBFGtw" RelativeXPathQuery="financed_net_yield_1__c" TagName="financed_net_yield_1__c"/>
+      <schemaTargets xmi:id="_Dtyur4kNEeKzAOY3hBFGtw" RelativeXPathQuery="monthly_cash_flow_with_financing_2__c" TagName="monthly_cash_flow_with_financing_2__c"/>
+      <schemaTargets xmi:id="_DtyusIkNEeKzAOY3hBFGtw" RelativeXPathQuery="financed_net_yield_2__c" TagName="financed_net_yield_2__c"/>
+      <schemaTargets xmi:id="_DtyusYkNEeKzAOY3hBFGtw" RelativeXPathQuery="monthly_cash_flow_with_financing_1__c" TagName="monthly_cash_flow_with_financing_1__c"/>
+      <schemaTargets xmi:id="_DtyusokNEeKzAOY3hBFGtw" RelativeXPathQuery="interest_rate_2__c" TagName="interest_rate_2__c"/>
+      <schemaTargets xmi:id="_Dtyus4kNEeKzAOY3hBFGtw" RelativeXPathQuery="interest_rate_1__c" TagName="interest_rate_1__c"/>
+      <schemaTargets xmi:id="_DtyutIkNEeKzAOY3hBFGtw" RelativeXPathQuery="monthly_cash_flow__c" TagName="monthly_cash_flow__c"/>
+      <schemaTargets xmi:id="_DtyutYkNEeKzAOY3hBFGtw" RelativeXPathQuery="noi__c" TagName="noi__c"/>
+      <schemaTargets xmi:id="_DtyutokNEeKzAOY3hBFGtw" RelativeXPathQuery="noi_with_financing_2__c" TagName="noi_with_financing_2__c"/>
+      <schemaTargets xmi:id="_Dtyut4kNEeKzAOY3hBFGtw" RelativeXPathQuery="noi_with_financing_1__c" TagName="noi_with_financing_1__c"/>
+      <schemaTargets xmi:id="_DtyuuIkNEeKzAOY3hBFGtw" RelativeXPathQuery="price_per_ft__c" TagName="price_per_ft__c"/>
+      <schemaTargets xmi:id="_DtyuuYkNEeKzAOY3hBFGtw" RelativeXPathQuery="price__c" TagName="price__c"/>
+      <schemaTargets xmi:id="_DtyuuokNEeKzAOY3hBFGtw" RelativeXPathQuery="yearly_interest_payment_1__c" TagName="yearly_interest_payment_1__c"/>
+      <schemaTargets xmi:id="_Dtyuu4kNEeKzAOY3hBFGtw" RelativeXPathQuery="monthly_interest_payment_2__c" TagName="monthly_interest_payment_2__c"/>
+      <schemaTargets xmi:id="_DtyuvIkNEeKzAOY3hBFGtw" RelativeXPathQuery="interest_payment_1__c" TagName="interest_payment_1__c"/>
+      <schemaTargets xmi:id="_DtyuvYkNEeKzAOY3hBFGtw" RelativeXPathQuery="down_payment_2__c" TagName="down_payment_2__c"/>
+      <schemaTargets xmi:id="_DtyuvokNEeKzAOY3hBFGtw" RelativeXPathQuery="down_payment_1__c" TagName="down_payment_1__c"/>
+      <schemaTargets xmi:id="_Dtyuv4kNEeKzAOY3hBFGtw" RelativeXPathQuery="cash_net_yield__c" TagName="cash_net_yield__c"/>
+      <schemaTargets xmi:id="_DtyuwIkNEeKzAOY3hBFGtw" RelativeXPathQuery="monthly_management__c" TagName="monthly_management__c"/>
+      <schemaTargets xmi:id="_DtyuwYkNEeKzAOY3hBFGtw" RelativeXPathQuery="management__c" TagName="management__c"/>
+      <schemaTargets xmi:id="_DtyuwokNEeKzAOY3hBFGtw" RelativeXPathQuery="monthly_insurance__c" TagName="monthly_insurance__c"/>
+      <schemaTargets xmi:id="_Dtyuw4kNEeKzAOY3hBFGtw" RelativeXPathQuery="insurance__c" TagName="insurance__c"/>
+      <schemaTargets xmi:id="_DtyuxIkNEeKzAOY3hBFGtw" RelativeXPathQuery="taxes__c" TagName="taxes__c"/>
+      <schemaTargets xmi:id="_DtyuxYkNEeKzAOY3hBFGtw" RelativeXPathQuery="monthly_taxes__c" TagName="monthly_taxes__c"/>
+      <schemaTargets xmi:id="_DtyuxokNEeKzAOY3hBFGtw" RelativeXPathQuery="monthlyrent__c" TagName="monthlyrent__c"/>
+      <schemaTargets xmi:id="_Dtyux4kNEeKzAOY3hBFGtw" RelativeXPathQuery="annual_rents__c" TagName="annual_rents__c"/>
+      <schemaTargets xmi:id="_DtyuyIkNEeKzAOY3hBFGtw" RelativeXPathQuery="est_of_market_value__c" TagName="est_of_market_value__c"/>
+      <schemaTargets xmi:id="_DtyuyYkNEeKzAOY3hBFGtw" RelativeXPathQuery="est_value_per_rent_multiplier__c" TagName="est_value_per_rent_multiplier__c"/>
+      <schemaTargets xmi:id="_DtyuyokNEeKzAOY3hBFGtw" RelativeXPathQuery="estimated_value__c" TagName="estimated_value__c"/>
+      <schemaTargets xmi:id="_Dtyuy4kNEeKzAOY3hBFGtw" RelativeXPathQuery="est_replacement_cost_per_sq_ft__c" TagName="est_replacement_cost_per_sq_ft__c"/>
+      <schemaTargets xmi:id="_DtyuzIkNEeKzAOY3hBFGtw" RelativeXPathQuery="est_replacement_cost__c" TagName="est_replacement_cost__c"/>
+      <schemaTargets xmi:id="_DtyuzYkNEeKzAOY3hBFGtw" RelativeXPathQuery="pba__totalarea_pb__c" TagName="pba__totalarea_pb__c"/>
+      <schemaTargets xmi:id="_DtyuzokNEeKzAOY3hBFGtw" RelativeXPathQuery="bedrooms__c" TagName="bedrooms__c"/>
+      <schemaTargets xmi:id="_Dtyuz4kNEeKzAOY3hBFGtw" RelativeXPathQuery="bathrooms__c" TagName="bathrooms__c"/>
+    </schema>
+  </TalendMetadata:XmlFileConnection>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_Dtyu0IkNEeKzAOY3hBFGtw" name="repository.metadataFileXml" dataManager="_DtwSYIkNEeKzAOY3hBFGtw">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_Dtyu0YkNEeKzAOY3hBFGtw" id="_C4oTIIkLEeKzAOY3hBFGtw" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Dtyu0okNEeKzAOY3hBFGtw" label="name" length="25" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Dtyu04kNEeKzAOY3hBFGtw" label="image_url" length="141" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Dtyu1IkNEeKzAOY3hBFGtw" label="image_title" length="46" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Dtyu1YkNEeKzAOY3hBFGtw" label="pba__propertytype__c" length="6" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Dtyu1okNEeKzAOY3hBFGtw" label="rented_status__c" length="9" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Dtyu14kNEeKzAOY3hBFGtw" label="zipcode__c" length="5" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Dtyu2IkNEeKzAOY3hBFGtw" label="pba__city_pb__c" length="12" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Dtyu2YkNEeKzAOY3hBFGtw" label="pba__description_pb__c" length="233" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Dtyu2okNEeKzAOY3hBFGtw" label="term_2__c" length="17" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Dtyu24kNEeKzAOY3hBFGtw" label="term_1__c" length="30" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Dtyu3IkNEeKzAOY3hBFGtw" label="pba__status__c" length="14" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Dtyu3YkNEeKzAOY3hBFGtw" label="year_built__c" length="4" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Dtyu3okNEeKzAOY3hBFGtw" label="pba__address_pb__c" length="25" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Dtyu34kNEeKzAOY3hBFGtw" label="financed_net_yield_1__c" length="18" precision="16" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Dtyu4IkNEeKzAOY3hBFGtw" label="monthly_cash_flow_with_financing_2__c" length="7" precision="4" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Dtyu4YkNEeKzAOY3hBFGtw" label="financed_net_yield_2__c" length="18" precision="16" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Dtyu4okNEeKzAOY3hBFGtw" label="monthly_cash_flow_with_financing_1__c" length="7" precision="4" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Dtyu44kNEeKzAOY3hBFGtw" label="interest_rate_2__c" length="4" precision="3" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Dtyu5IkNEeKzAOY3hBFGtw" label="interest_rate_1__c" length="4" precision="2" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Dtyu5YkNEeKzAOY3hBFGtw" label="monthly_cash_flow__c" length="6" precision="3" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Dtyu5okNEeKzAOY3hBFGtw" label="noi__c" length="7" precision="3" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Dtyu54kNEeKzAOY3hBFGtw" label="noi_with_financing_2__c" length="8" precision="4" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Dtyu6IkNEeKzAOY3hBFGtw" label="noi_with_financing_1__c" length="7" precision="3" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Dtyu6YkNEeKzAOY3hBFGtw" label="price_per_ft__c" length="5" precision="3" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Dtyu6okNEeKzAOY3hBFGtw" label="price__c" length="8" precision="3" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Dtyu64kNEeKzAOY3hBFGtw" label="yearly_interest_payment_1__c" length="6" precision="2" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Dtyu7IkNEeKzAOY3hBFGtw" label="monthly_interest_payment_2__c" length="6" precision="3" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Dtyu7YkNEeKzAOY3hBFGtw" label="interest_payment_1__c" length="6" precision="3" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Dtyu7okNEeKzAOY3hBFGtw" label="down_payment_2__c" length="7" precision="2" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Dtyu74kNEeKzAOY3hBFGtw" label="down_payment_1__c" length="7" precision="2" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Dtyu8IkNEeKzAOY3hBFGtw" label="cash_net_yield__c" length="5" precision="3" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Dtyu8YkNEeKzAOY3hBFGtw" label="monthly_management__c" length="5" precision="3" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Dtyu8okNEeKzAOY3hBFGtw" label="management__c" length="6" precision="3" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Dtyu84kNEeKzAOY3hBFGtw" label="monthly_insurance__c" length="5" precision="3" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Dtyu9IkNEeKzAOY3hBFGtw" label="insurance__c" length="6" precision="3" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Dtyu9YkNEeKzAOY3hBFGtw" label="taxes__c" length="6" precision="3" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_DtzVsIkNEeKzAOY3hBFGtw" label="monthly_taxes__c" length="5" precision="3" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_DtzVsYkNEeKzAOY3hBFGtw" label="monthlyrent__c" length="6" precision="3" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_DtzVsokNEeKzAOY3hBFGtw" label="annual_rents__c" length="7" precision="3" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_DtzVs4kNEeKzAOY3hBFGtw" label="est_of_market_value__c" length="5" precision="3" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_DtzVtIkNEeKzAOY3hBFGtw" label="est_value_per_rent_multiplier__c" length="8" precision="3" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_DtzVtYkNEeKzAOY3hBFGtw" label="estimated_value__c" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_DtzVtokNEeKzAOY3hBFGtw" label="est_replacement_cost_per_sq_ft__c" length="4" precision="2" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_DtzVt4kNEeKzAOY3hBFGtw" label="est_replacement_cost__c" length="8" precision="3" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_DtzVuIkNEeKzAOY3hBFGtw" label="pba__totalarea_pb__c" length="6" precision="2" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_DtzVuYkNEeKzAOY3hBFGtw" label="bedrooms__c" length="3" precision="2" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_DtzVuokNEeKzAOY3hBFGtw" label="bathrooms__c" length="3" precision="2" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

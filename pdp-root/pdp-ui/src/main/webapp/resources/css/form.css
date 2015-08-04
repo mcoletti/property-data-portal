@@ -1,0 +1,125 @@
+    @charset "utf-8";
+/* form.css */
+input[type="text"],
+input[type="password"],
+input[type="file"],
+input[type=""],
+select,
+textarea { background-clip:padding-box; border:1px solid #beb48e; border-radius:3px; box-shadow:0 1px rgba(255, 255, 255, .2), inset 0 1px 2px rgba(0, 0, 0, .2); outline:none; }
+/***************************************
+	Text inputs
+***************************************/
+input:not([type]),
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="url"] { background-clip:padding-box; border:1px solid #beb48e; border-radius:3px; box-shadow:0 1px rgba(255, 255, 255, .2), inset 0 1px 2px rgba(0, 0, 0, .2); padding:5px 4px; vertical-align:middle; }
+/* IE7 breaks if not separated */
+input[type="color"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="month"],
+input[type="range"],
+input[type="time"],
+input[type="week"] { background-clip:padding-box; border:1px solid #beb48e; border-radius:3px; box-shadow:0 1px rgba(255, 255, 255, .2), inset 0 1px 2px rgba(0, 0, 0, .2); padding:5px 4px; vertical-align:middle; }
+/***************************************
+	Other inputs
+***************************************/
+input[type="radio"],
+input[type="checkbox"] { box-shadow:0 1px rgba(255, 255, 255, .2); height:13px; outline:none; vertical-align:middle; width:13px; }
+input[type="text"],
+input[type="password"],
+input[type=""] { padding:5px 4px; vertical-align:middle; }
+input[type="file"] { vertical-align:middle; }
+/*select { *filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=-1, OffY=0, color=#BEB48E) progid:DXImageTransform.Microsoft.dropshadow(OffX=1, OffY=0, color=#BEB48E) progid:DXImageTransform.Microsoft.dropshadow(OffX=0, OffY=-1, color=#BEB48E) progid:DXImageTransform.Microsoft.dropshadow(OffX=0, OffY=1, color=#BEB48E); padding:4px 3px; vertical-align:middle; }*/
+textarea { resize:vertical; vertical-align:top; }
+/***************************************
+	Sizes
+***************************************/
+input[type="text"].textsml,
+input[type="password"].textsml,
+input[type=""].textsml { padding:3px; }
+input:not([type]).textsml,
+input[type="email"].textsml,
+input[type="number"].textsml,
+input[type="search"].textsml,
+input[type="tel"].textsml,
+input[type="url"].textsml { padding:3px; }
+input[type="color"].textsml,
+input[type="date"].textsml,
+input[type="datetime"].textsml,
+input[type="datetime-local"].textsml,
+input[type="month"].textsml,
+input[type="range"].textsml,
+input[type="time"].textsml,
+input[type="week"].textsml { padding:3px; }
+select.textsml { padding:1px 3px 3px; padding:3px 0/; }
+:root select.textsml { padding:2px 3px 0/; }
+input[type="text"].text2xlrg,
+input[type="password"].text2xlrg,
+input[type=""].text2xlrg { padding:3px 5px 4px; }
+input:not([type]).text2xlrg,
+input[type="email"].text2xlrg,
+input[type="number"].text2xlrg,
+input[type="search"].text2xlrg,
+input[type="tel"].text2xlrg,
+input[type="url"].text2xlrg { padding:3px 5px 4px; }
+input[type="color"].text2xlrg,
+input[type="date"].text2xlrg,
+input[type="datetime"].text2xlrg,
+input[type="datetime-local"].text2xlrg,
+input[type="month"].text2xlrg,
+input[type="range"].text2xlrg,
+input[type="time"].text2xlrg,
+input[type="week"].text2xlrg { padding:3px 5px 4px; }
+select.text2xlrg { padding:2px 3px 3px; padding:2px 3px 0/; }
+:root select.text2xlrg { padding:3px 0/; }
+/***************************************
+	Events
+***************************************/
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="file"]:focus,
+input[type="search"]:focus,
+input[type=""]:focus, select:focus,
+textarea:focus,
+input[type="text"]:active,
+input[type="password"]:active,
+input[type="file"]:active,
+input[type=""]:active, select:active,
+textarea:active,
+input[type="text"].focus,
+input[type="password"].focus,
+input[type="file"].focus,
+input[type=""].focus,
+select.focus,
+textarea.focus { border-color:#566c11; box-shadow: inset 0 1px rgba(0, 0, 0, .2), 0 0 2px rgba(116, 135, 23, .75); }
+input[type="radio"]:focus,
+input[type="checkbox"]:focus,
+input[type="radio"]:active,
+input[type="checkbox"]:active,
+input[type="radio"].focus,
+input[type="checkbox"].focus { box-shadow: 0 0 2px rgba(116, 135, 23, .75); }
+/* IE7 breaks if not separated */
+input:not([type]):focus,
+input:not([type]):active,
+input:not([type]).focus { border-color:#566c11; box-shadow: inset 0 1px rgba(0, 0, 0, .2), 0 0 2px rgba(116, 135, 23, .75); }
+/*select.focus { *filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=-1, OffY=0, color=#566C11) progid:DXImageTransform.Microsoft.dropshadow(OffX=1, OffY=0, color=#566C11) progid:DXImageTransform.Microsoft.dropshadow(OffX=0, OffY=-1, color=#566C11) progid:DXImageTransform.Microsoft.dropshadow(OffX=0, OffY=1, color=#566C11); }*/
+/***************************************
+	Error
+***************************************/
+input[type="text"].error,
+input[type="password"].error,
+input[type="file"].error,
+input[type=""].error,
+select.error,
+textarea.error { border-color: #990000; box-shadow:0 0 2px #990000; }
+/* IE7 breaks if not separated */
+input[type="radio"].error,
+input[type="checkbox"].error { box-shadow:0 0 2px #990000; }
+input:not([type]).error { border-color: #990000; box-shadow:0 0 2px #990000; }
+/* IE breaks if not separated */
+input:invalid { border-color: #990000; box-shadow:0 0 2px #990000; }
+/*select.error { *filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=-1, OffY=0, color=#990000) progid:DXImageTransform.Microsoft.dropshadow(OffX=1, OffY=0, color=#990000) progid:DXImageTransform.Microsoft.dropshadow(OffX=0, OffY=-1, color=#990000) progid:DXImageTransform.Microsoft.dropshadow(OffX=0, OffY=1, color=#990000); }*/

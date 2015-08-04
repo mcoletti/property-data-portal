@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <artifactId>pdp-root</artifactId>
+        <groupId>com.codeitek.pdp</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>pdp-api</artifactId>
+    <packaging>war</packaging>
+    <name>Property Data Portal Web Service</name>
+
+    <properties>
+        <tomcat.url>http://archive.apache.org/dist/tomcat/tomcat-7/v7.0.26/bin/apache-tomcat-7.0.26.zip</tomcat.url>
+        <jvm.debug.args>-DignoreArg=true</jvm.debug.args>
+        <activeSpringProfiles>local</activeSpringProfiles>
+        <serverPort>8080</serverPort>
+    </properties>
+
+    <profiles>
+        <profile>
+            <id>debug</id>
+            <properties>
+                <jvm.debug.args>-Xdebug -Xnoagent -Djava.compiler=NONE
+                    -Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=5005
+                </jvm.debug.args>
+            </properties>
+        </profile>
+    </profiles>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.codeitek.pdp</groupId>
+            <artifactId>pdp-model</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.codeitek.pdp</groupId>
+            <artifactId>pdp-dal</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.codeitek.pdp</groupId>
+            <artifactId>pdp-service</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+        <!--Main Spring -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-core</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-orm</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-jdbc</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-tx</artifactId>
+        </dependency>
+
+        <!--Spring Security -->
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-web</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-config</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>servlet-api</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>javassist</groupId>
+            <artifactId>javassist</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.codehaus.enunciate</groupId>
+            <artifactId>enunciate-spring-app-rt</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>jcl-over-slf4j</artifactId>
+            <scope>runtime</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-log4j12</artifactId>
+            <scope>runtime</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <scope>compile</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.json</groupId>
+            <artifactId>json</artifactId>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <finalName>${project.artifactId}</finalName>
+
+        <plugins>
+            <plugin>
+                <groupId>org.codehaus.enunciate</groupId>
+                <artifactId>maven-enunciate-spring-plugin</artifactId>
+            </plugin>
+
+            <plugin>
+                <groupId>org.codehaus.cargo</groupId>
+                <artifactId>cargo-maven2-plugin</artifactId>
+                <configuration>
+                    <container>
+                        <containerId>tomcat7x</containerId>
+                        <timeout>1200000</timeout>
+                        <!-- 20 minutes (1200000 milliseconds) default is
+                            2 min (120000 milliseconds) -->
+                        <zipUrlInstaller>
+                            <url>${tomcat.url}</url>
+                            <downloadDir>${project.basedir}/downloads</downloadDir>
+                            <extractDir>${project.basedir}/cargo-install</extractDir>
+                        </zipUrlInstaller>
+                        <append>false</append>
+                    </container>
+                    <configuration>
+                        <properties>
+                            <cargo.jvmargs>-Xmx128m
+                                -Dspring.profiles.active=${activeSpringProfiles}
+                                -Dfile.encoding=utf-8
+                                ${jvm.debug.args}
+                            </cargo.jvmargs>
+                            <cargo.logging>medium</cargo.logging>
+                            <cargo.servlet.port>${serverPort}</cargo.servlet.port>
+                        </properties>
+                        <home>${project.build.directory}/tomcat7x</home>
+                        <deployables>
+                            <deployable>
+                                <properties>
+                                    <context>${project.artifactId}</context>
+                                </properties>
+                            </deployable>
+                        </deployables>
+                    </configuration>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>

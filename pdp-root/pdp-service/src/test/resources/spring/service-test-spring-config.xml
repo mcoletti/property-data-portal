@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:jdbc="http://www.springframework.org/schema/jdbc"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+       http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.1.xsd
+       http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.1.xsd
+       http://www.springframework.org/schema/jdbc http://www.springframework.org/schema/jdbc/spring-jdbc-3.1.xsd">
+
+    <context:annotation-config/>
+
+    <tx:annotation-driven xmlns:tx="http://www.springframework.org/schema/tx" transaction-manager="transactionManager" />
+
+    <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property customerName="dataSource" ref="dataSource"/>
+    </bean>
+
+    <bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
+        <constructor-arg ref="dataSource"/>
+    </bean>
+
+    <bean id="namedParameterJdbcTemplate" class="org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate">
+        <constructor-arg ref="jdbcTemplate"/>
+    </bean>
+    <import resource="service-persistence-beans.xml"/>
+
+    <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">
+        <property customerName="driverClassName" value="org.h2.Driver"/>
+        <property customerName="url" value="jdbc:h2:mem:PDPDB;MODE=MySQL"/>
+        <property customerName="username" value="sa"/>
+        <property customerName="password" value=""/>
+    </bean>
+
+    <!--<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">-->
+    <!--<property customerName="driverClassName" value="${jdbc.driverClassName}"/>-->
+    <!--<property customerName="url" value="${jdbc.url}"/>-->
+    <!--<property customerName="username" value="${jdbc.username}"/>-->
+    <!--<property customerName="password" value="${jdbc.password}"/>-->
+    <!--</bean>-->
+
+    <!--<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">-->
+    <!--<property customerName="driverClassName" value="com.mysql.jdbc.Driver"/>-->
+    <!--<property customerName="url" value="jdbc:mysql://192.168.1.161:3306/PDPDB"/>-->
+    <!--<property customerName="username" value="root"/>-->
+    <!--<property customerName="password" value="mousefr33k"/>-->
+    <!--</bean>-->
+
+    <jdbc:initialize-database data-source="dataSource" enabled="true">
+        <jdbc:script location="classpath:pdp.sql"/>
+    </jdbc:initialize-database>
+</beans>

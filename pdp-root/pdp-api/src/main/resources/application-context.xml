@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:security="http://www.springframework.org/schema/security"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:jdbc="http://www.springframework.org/schema/jdbc" xmlns:beans="http://www.springframework.org/schema/beans"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+       http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.1.xsd
+       http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.1.xsd
+       http://www.springframework.org/schema/jdbc http://www.springframework.org/schema/jdbc/spring-jdbc-3.1.xsd
+       http://www.springframework.org/schema/security
+       http://www.springframework.org/schema/security/spring-security-3.1.xsd
+       http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security.xsd">
+
+    <tx:annotation-driven xmlns:tx="http://www.springframework.org/schema/tx" transaction-manager="transactionManager"/>
+
+    <context:annotation-config/>
+
+    <!--<bean id="propertyConfigurer"-->
+          <!--class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">-->
+        <!--<property name="locations">-->
+            <!--<list>-->
+                <!--<value>classpath:api.properties</value>-->
+            <!--</list>-->
+        <!--</property>-->
+    <!--</bean>-->
+
+    <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+
+    <bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
+        <constructor-arg ref="dataSource"/>
+    </bean>
+
+    <bean id="namedParameterJdbcTemplate" class="org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate">
+        <constructor-arg ref="jdbcTemplate"/>
+    </bean>
+
+    <!--<bean id="propertyConfigurer"-->
+          <!--class="com.codeitek.pdp.api.common.ApiPropertyConfigurator">-->
+        <!--<property name="ignoreResourceNotFound" value="true"/>-->
+        <!--<property name="locations">-->
+            <!--<list>-->
+                <!--<value>classpath:api.properties</value>-->
+            <!--</list>-->
+        <!--</property>-->
+    <!--</bean>-->
+
+    <security:http realm="Protected API" use-expressions="true" auto-config="false" create-session="stateless"
+                   entry-point-ref="CustomAuthenticationEntryPoint">
+        <security:custom-filter ref="authenticationTokenProcessingFilter" position="FORM_LOGIN_FILTER"/>
+        <security:intercept-url pattern="/v1/authorise" access="permitAll"/>
+        <security:intercept-url pattern="/v1/api/**" access="isAuthenticated()"/>
+        <security:intercept-url pattern="/v1/admin/**" access="isAuthenticated()"/>
+    </security:http>
+
+    <!--API Main Beans -->
+
+
+    <!--hook up the spring security filter chain-->
+
+
+
+    <bean id="adminEndpoint" class="com.codeitek.pdp.api.impl.AdminEndpointImpl"/>
+    <bean id="propertyServiceEndpoint" class="com.codeitek.pdp.api.impl.PropertyServiceEndpointImpl"/>
+    <bean id="CustomAuthenticationEntryPoint" class="com.codeitek.pdp.api.auth.CustomAuthenticationEntryPoint"/>
+
+    <!--Security Beans -->
+    <bean id="authenticationTokenProcessingFilter"
+          class="com.codeitek.pdp.api.auth.RESTAuthenticationFilter"/>
+    <beans:alias name="authenticationTokenProcessingFilter" alias="securityFilter"/>
+    <!--<bean id="authority" class="com.codeitek.pdp.api.auth.AuthorizedAuthority"/>-->
+
+
+    <!-- DAL Core Beans-->
+    <bean id="customerDao" class="com.codeitek.pdp.dal.impl.CustomerJdbcDao"/>
+    <bean id="customerAttributesJdbcDao" class="com.codeitek.pdp.dal.impl.CustomerAttributesJdbcDao"/>
+    <bean id="propertyAttributeDataJdbcDao" class="com.codeitek.pdp.dal.impl.PropertyAttributeDataJdbcDao"/>
+    <bean id="propertyAttributesJdbcDao" class="com.codeitek.pdp.dal.impl.PropertyAttributesJdbcDao"/>
+    <bean id="propertyDataJdbcDao" class="com.codeitek.pdp.dal.impl.PropertyDataJdbcDao"/>
+    <bean id="propertyTypeJdbcDao" class="com.codeitek.pdp.dal.impl.PropertyTypeJdbcDao"/>
+    <bean id="propertyStatusJdbcDao" class="com.codeitek.pdp.dal.impl.PropertyStatusMapJdbcDao"/>
+    <bean id="propertyFinancialJdbcDao" class="com.codeitek.pdp.dal.impl.PropertyFinancialJdbcDao"/>
+    <bean id="propertyImagesJdbcDao" class="com.codeitek.pdp.dal.impl.PropertyImagesJdbcDao"/>
+    <bean id="financialKeyJdbcDao" class="com.codeitek.pdp.dal.impl.FinancialKeyJdbcDao"/>
+    <bean id="cityJdbcDao" class="com.codeitek.pdp.dal.impl.CityJdbcDao"/>
+    <bean id="stateJdbcDao" class="com.codeitek.pdp.dal.impl.StateJdbcDao"/>
+    <bean id="zipCodesJdbcDao" class="com.codeitek.pdp.dal.impl.ZipCodesJdbcDao"/>
+    <bean id="dataSourceJdbcDao" class="com.codeitek.pdp.dal.impl.DataSourceJdbcDao"/>
+    <bean id="utils" class="com.codeitek.pdp.dal.Utils"/>
+
+    <!--DAL Admin Beans0-->
+    <bean id="userActivityLogJdbcDao" class="com.codeitek.pdp.dal.impl.UserActivityLogJdbcDao"/>
+    <bean id="userJdbcDao" class="com.codeitek.pdp.dal.impl.UserJdbcDao"/>
+    <bean id="userAttributesJdbcDao" class="com.codeitek.pdp.dal.impl.UserAttributesJdbcDao"/>
+    <bean id="systemGroupMembersJdbcDao" class="com.codeitek.pdp.dal.impl.SystemGroupMembersJdbcDao"/>
+    <bean id="systemRolesJdbcDao" class="com.codeitek.pdp.dal.impl.SystemRolesJdbcDao"/>
+    <bean id="groupMembersJdbcDao" class="com.codeitek.pdp.dal.impl.GroupMembersJdbcDao"/>
+    <bean id="groupsJdbcDao" class="com.codeitek.pdp.dal.impl.GroupsJdbcDao"/>
+    <bean id="roleDataJdbcDao" class="com.codeitek.pdp.dal.impl.RoleDataJdbcDao"/>
+    <bean id="accountLevelJdbcDao" class="com.codeitek.pdp.dal.impl.AccountLevelJdbcDao"/>
+
+    <bean id="attributesJdbcDao" class="com.codeitek.pdp.dal.impl.AttributesJdbcDao"/>
+    <bean id="uiElementTypesJdbcDao" class="com.codeitek.pdp.dal.impl.UiElementTypesJdbcDao"/>
+    <bean id="uiPageLayoutJdbcDao" class="com.codeitek.pdp.dal.impl.UiPageLayoutJdbcDao"/>
+    <bean id="uiSectionGroupsJdbcDao" class="com.codeitek.pdp.dal.impl.UiSectionGroupsJdbcDao"/>
+    <bean id="uiSectionsJdbcDao" class="com.codeitek.pdp.dal.impl.UiSectionsJdbcDao"/>
+    <bean id="uiElementTypeAttributesJdbcDao" class="com.codeitek.pdp.dal.impl.UiElementTypeAttributesJdbcDao"/>
+    <bean id="uiPageAttributesJdbcDao" class="com.codeitek.pdp.dal.impl.UiPageAttributesJdbcDao"/>
+    <bean id="pagelayoutJdbcDao" class="com.codeitek.pdp.dal.impl.PageLayoutJdbcDao"/>
+    <bean id="authoritiesJdbcDao" class="com.codeitek.pdp.dal.impl.AuthorityJdbcDao"/>
+    <bean id="authorityUserMapDao" class="com.codeitek.pdp.dal.impl.AuthorityUserMapDaoImpl"/>
+
+    <!-- Service Beans-->
+    <bean id="administrationService" class="com.codeitek.pdp.service.AdministrationServiceImpl"/>
+    <bean id="propertyCoreDao" class="com.codeitek.pdp.service.PropertyCoreDaoImpl"/>
+    <bean id="propertyService" class="com.codeitek.pdp.service.PropertyServiceImpl"/>
+    <bean id="coreDao" class="com.codeitek.pdp.service.CoreDaoImpl"/>
+    <bean id="cacheManager" class="com.codeitek.pdp.cache.CacheManagerImpl">
+        <constructor-arg value="false"/>
+    </bean>
+
+    <!-- API Beans -->
+    <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">
+        <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
+        <property name="url" value="jdbc:mysql://192.168.1.161:3306/PDPDB"/>
+        <property name="username" value="root"/>
+        <property name="password" value="mousefr33k"/>
+    </bean>
+
+
+    <!--<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">-->
+    <!--<property name="driverClassName" value="${jdbc.driverClassName}"/>-->
+    <!--<property name="url" value="${jdbc.url}"/>-->
+    <!--<property name="username" value="${jdbc.username}"/>-->
+    <!--<property name="password" value="${jdbc.password}"/>-->
+    <!--</bean>-->
+
+    <!-- TODO: Fix this.  Use property configurator to load properties for different environments.
+     This works since last bean initialized is the bean Spring uses. -->
+    <beans profile="local">
+        <!--<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">-->
+        <!--<property customerName="driverClassName" value="org.h2.Driver"/>-->
+        <!--<property customerName="url" value="jdbc:h2:mem:TALONDBTEST;MODE=MySQL"/>-->
+        <!--<property customerName="username" value="dbAdmin"/>-->
+        <!--<property customerName="password" value="dbAdmin"/>-->
+        <!--</bean>-->
+    </beans>
+</beans>

@@ -1,0 +1,54 @@
+﻿@charset "utf-8";
+/****************************************
+	/css/v2/carousel.css
+****************************************/
+/* Carousel stage */
+.carousel { height:0; overflow:hidden; position:relative; }
+.carousel.carouselActive { height:auto; }
+.carousel.loading { height:32px; overflow:hidden; }
+.carousel.loading ul,
+.carousel.loading menu,
+.carousel.loading .carouselBg { opacity:0; }
+/* Default carousel */
+.carouselBg { background-color:#eff2d3; -moz-box-shadow:inset 0 4px 24px rgba(0, 0, 0, .4); -webkit-box-shadow:inset 0 4px 24px rgba(0, 0, 0, .4); box-shadow:inset 0 4px 24px rgba(0, 0, 0, .4); overflow:hidden; position:relative; }
+.carousel .carouselInner { height:0; overflow:hidden; position:relative; }
+.carouselActive .carouselInner { height:auto; }
+.carousel .carouselSlide { -moz-box-sizing:border-box; box-sizing:border-box; -webkit-box-sizing:border-box; float:left; position:relative; }
+.carousel .carouselSlide > a { -webkit-tap-highlight-color:rgba(255, 255, 255, 0); }
+.carouselSlide > img { vertical-align:middle; }
+/* Full width carousel */
+.carouselFullWidth .carouselSlide { width:100%; }
+.carouselFullWidth .carouselSlide > img { -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box; width:100%; }
+/* Carousel icons */
+.carousel .icon:before { margin-right:0; }
+/* Carousel controls */
+.carouselControlsDefault .carouselPreviousBtn,
+.carouselControlsDefault .carouselNextBtn { background-color:transparent; border:0; bottom:0; color:#efefef; display:block; font-size:28px; font-weight:normal; opacity:.6; position:absolute; text-shadow:0 1px 8px rgba(0, 0, 0, .4); top:0; -webkit-transition:all .2s; -moz-transition:all .2s; -ms-transition:all .2s; -o-transition:all .2s; transition:all .2s; width:40px; }
+.carouselControlsDefault .carouselPreviousBtn { left:0; }
+.carouselControlsDefault .carouselNextBtn { right:0; }
+.carouselControlsDefault .carouselNextBtn.iconArrowRight:before { right:2px; }
+	.carouselControlsDefault .carouselPreviousBtn.iconArrowLeft:before { left:-3px; }
+.noTouch .carousel:hover .carouselControlsDefault .carouselPreviousBtn,
+.noTouch .carousel:hover .carouselControlsDefault .carouselNextBtn { background-color:#000; background-color:rgba(0, 0, 0, .3); opacity:1; text-shadow:none; }
+.noTouch .carousel .carouselControlsDefault .carouselPreviousBtn:hover,
+.noTouch .carousel .carouselControlsDefault .carouselNextBtn:hover { background:#afbc22; -webkit-box-shadow:0 0 8px rgba(0, 0, 0, .6); -moz-box-shadow:0 0 8px rgba(0, 0, 0, .6); box-shadow:0 0 8px rgba(0, 0, 0, .6); text-shadow:none; }
+.carouselFirstSlide .carouselControlsDefault .carouselPreviousBtn,
+.carouselLastSlide .carouselControlsDefault .carouselNextBtn { display:none; }
+.carouselContinuous.carouselFirstSlide .carouselPreviousBtn,
+.carouselContinuous.carouselLastSlide .carouselNextBtn { display:block; }
+/* Pagination */
+.carouselPagination { text-align:center; }
+.carouselPagination button { margin-left:6px; }
+.carouselPagination button.active { cursor:default; }
+.carouselPagination button:first-child { margin-left:0; }
+.carouselPagination button.ancBtn.sml { height:12px; padding:0; width:12px; }
+.carouselPaginationNumbers button.ancBtn.sml { height:20px; line-height:18px; margin-top:6px; text-align:center; width:24px; }
+.carouselPaginationDots button.ancBtn.sml { -moz-border-radius:100%; -webkit-border-radius:100%; border-radius:100%; }
+/* Pause / Play button */
+.carouselPausePlay { bottom:8px; left:50%; margin-left:-16px; opacity:.6; position:absolute; }
+.carousel:hover .carouselPausePlay { opacity:1; -moz-transition:opacity .3s; -ms-transition:opacity .3s; -o-transition:opacity .3s; -webkit-transition:opacity .3s; transition:opacity .3s; }
+.carouselPausePlay button { height:16px; padding:0 8px; width:32px; }
+@media only screen and (max-width:767px) {
+	.carouselControlsDefault .carouselPreviousBtn,
+	.carouselControlsDefault .carouselNextBtn { font-size:24px; width:32px; }
+}

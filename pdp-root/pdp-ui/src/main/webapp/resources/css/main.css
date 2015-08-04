@@ -1,0 +1,286 @@
+@charset "utf-8";
+/* main.css */
+/****************************************
+	Style Reset
+****************************************/
+html { overflow-y:scroll; }
+body, button, dd, div, dl, dt, fieldset, form, input, h1, h2, h3, h4, h5, h6, li, ol, p, pre, td, textarea, ul { margin:0; padding:0; }
+body, h1, h2, h3, h4, h5, h6 { color:#003366; font:400 13px/1.3 "Helvetica Neue", Arial, sans-serif; }
+button, input { color:#003366; font:400 13px Georgia,"Bitstream Charter",serif }
+table { border-collapse:collapse; border-spacing:0; font:inherit; }
+fieldset, img { border:none; }
+address, caption, cite, code, em, th, h1, h2, h3, h4, h5, h6 { font-style:normal; font-weight:400; }
+caption, th { text-align:left; }
+ol, ul, li { list-style:none; text-indent:0; }
+button, input[type="button"], input[type="submit"] { overflow:visible; }
+button::-moz-focus-inner, input[type="button"]::-moz-focus-inner, input[type="submit"]::-moz-focus-inner { border:none; margin:0; outline:none; padding:0; }
+button:focus, button:active, input:focus, input:active { outline:none; }
+a { text-decoration:none; }
+p a, p .link, a:hover, a:focus { text-decoration:underline; }
+a:focus { outline:none; }
+a:link { color:#445708; }
+a:visited { color:#445708; }
+a:hover { color:#789200; }
+.clearfix:after { clear:both; content:"."; display:block; height:0; visibility:hidden; }
+* html .clearfix, *:first-child+html .clearfix { display:block; zoom:1; }
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display:block; margin:0; padding:0; }
+.pointerFinger{
+    cursor: hand;
+}
+.listing{
+    width: 500px;margin-top: 10px;margin-bottom: 10px;margin-left: 20px
+}
+.lstBody{
+    width:112px; float:left;
+}
+.lstImg{
+    width: 500px;margin-top: 10px;margin-bottom: 10px;
+}
+.popUp{
+    position: absolute;left: 20%;display: none;z-index: 1;
+}
+
+.popUp.med{
+    width: 680px;height: 500px;
+}
+
+.popUp.lrg{
+    width: 800px;height: 800px;
+}
+.imgDiv{
+    width: 95%;height: 95%;margin-top: 20px;margin-left: 20px;
+}
+.img.med{
+    width: 300px;
+    height: 300px;
+}
+.fRight{
+    float: right;
+}.fLeft{
+     float: left;
+ }
+.spText {
+    color: #494949;
+    font-size: 14px;
+    font-weight: bold;
+}
+.summaryText{
+    font-family: Georgia;
+    font-size:18px;
+}
+
+.alignright, img.alignright {
+    display: inline;
+    float: right;
+    margin-left: 24px;
+    margin-top: 4px;
+
+}
+.flag {
+    width: 68px;
+    height: 75px;
+    overflow: hidden;
+    position: absolute;
+    left: 117px;
+    top: 5px;
+    z-index: 100;
+    background: url(../images/assets/sideFlag.png) no-repeat 0 0;
+    display: block;
+}
+.link_btn {
+    padding: .4em 1em .4em 20px;
+    text-decoration: none;
+    position: relative;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.link_btn span.ui-icon {
+    margin: 0 5px 0 0;
+    position: absolute;
+    left: .2em;
+    top: 50%;
+    margin-top: -8px;
+}
+
+/* Widths */
+.w5 { width:5.666%; }
+.w16 { width:16.666%; }
+.w20 { width:20%; }
+.w25 { width:25%; }
+.w30 { width:30%; }
+.w33 { width:33.333%; }
+.w40 { width:40%; }
+.w50 { width:50%; }
+.w60 { width:60%; }
+.w66 { width:66.666%; }
+.w70 { width:70%; }
+.w75 { width:75%; }
+.w80 { width:80%; }
+.w83 { width:83.333%; }
+.w95 { width:93.333%; }
+.w100 { width:100%; }
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+.ltr {
+    text-align: left;
+}
+.rtl {
+    text-align: right;
+}
+/****************************************
+	Global Styles
+****************************************/
+/*body{*/
+    /*background-color: #ABABAB;*/
+/*}*/
+body{
+    background-color: #ffffff;
+}
+
+.header{
+   width: 100%;
+   height: 25px;
+   background: url(images/ui-bg_glass_20_555555_1x400.png) 25% 25% repeat-x;
+}
+.header .innerHeader{
+    font:400 13px Georgia,"Bitstream Charter",serif ; margin:0 auto 0 auto; width:990px;
+}
+
+/*body { background:#293855 url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAGuCAIAAADeSvtRAAAAfUlEQVQ4y9WTzQ7AIAiD+fr+rzzYSeOWGP+z7MABwVJstYiQmf02zvP3yrk2442Gqvijb9LT34tJ7vVP5u/zTBzDP113n/eYCv3ec1IOLGjn1bu9+K0zQEad/4r/iMj8dvLfVqetfcsf5X6z/y7ieuVk/SU19wMesxMXQMANapSO6rYFQnIAAAAASUVORK5CYII=) repeat-x 0 0; }*/
+/*.bodyBkgAlt { background:#fff; }*/
+/****************************************
+	Text Classes
+****************************************/
+.fontfGA{
+    font-family: Georgia;
+}
+.textAlgn{text-align: center}
+.text6xlrg { font-size:32px; }
+.text5xlrg { font-size:28px; }
+.text4xlrg { font-size:24px; }
+.text3xlrg,
+h1, h1.textdefault, h1.textdefaultsize,
+h2, h2.textdefault, h2.textdefaultsize,
+h3, h3.textdefault, h3.textdefaultsize,
+h4, h4.textdefault, h4.textdefaultsize,
+h5, h5.textdefault, h5.textdefaultsize,
+h6, h6.textdefault, h6.textdefaultsize { font-size:21px; }
+.text2xlrg,
+.ancBtn.lrg { font-size:18px; }
+.textxlrg { font-size:16px; }
+.textlrg,
+.ancBtn.med { font-size:14px; }
+.textsml,
+.ancBtn.sml { font-size:12px; }
+.textxsml,
+.ancBtn.tin { font-size:11px; }
+.textmed,
+.textdefault,
+.textdefaultsize { font-size:13px; }
+.textalt { font-family:Georgia, "Times New Roman", Times, serif; }
+.textnormal,
+.textdefault { font-family:"Helvetica Neue", Arial, sans-serif; }
+/****************************************
+	Helper Classes
+****************************************/
+.colorHdr{
+    color: #ffffff;
+}
+.coloralt,
+a.coloralt { color:#695e49; }
+.coloralt2,
+a.coloralt2 { color:#83381f; }
+.coloralt3,
+a.coloralt3 { color:#754200; }
+.coloralt4,
+a.coloralt4 { color:#fff; }
+.colornormal,
+a.colornormal,
+.textdefault,
+a.textdefault { color:#333333; }
+.bold { font-weight:700; }
+.italic { font-style:italic; }
+.normal,
+.textdefault { font-style:normal; font-weight:400; }
+.link { -webkit-appearance:none; background:none; border:0; color:#445708; cursor:pointer; padding:0; text-decoration:none; }
+.link:active,
+.link:hover,
+.link:focus { color:#789200; text-decoration:underline; }
+a.underline,
+button.underline { text-decoration:underline; }
+.photo { background-color:#e8e6e3; border:2px solid #fff; display:inline-block; line-height:0; outline:1px solid #bbb0a3; overflow:hidden; text-align:center; }
+.photo:hover,
+.photo:focus { outline-color:#695e49; -moz-transition:all .3s; -ms-transition:all .3s; -o-transition:all .3s; -webkit-transition:all .3s; transition:all .3s; }
+.photo > img { -moz-box-sizing:border-box; -webkit-box-sizing:border-box; box-sizing:border-box; max-height:100%; max-width:100%; }
+.photoSize1 { height:600px; width:600px; }
+.photoSize2 { height:256px; width:256px; }
+.photoSize3 { height:160px; width:160px; }
+.photoSize4 { height:96px; width:96px; }
+.photoSize5 { height:32px; width:32px; }
+.photoProfileMale { background-color:#c9d6dc; outline:1px solid #a6bcc6; }
+.photoProfileFemale { background-color:#d9c3bc; outline:1px solid #c19b8f; }
+.noDisplay { display:none !important; }
+/****************************************
+	Miscellaneous (or to be moved)
+****************************************/
+.itemCount { background-color:red; border-radius:3px; box-shadow:0 1px rgba(0, 0, 0, .77); color:#fff; font-size:12px; font-weight:700; left:-4px; line-height:14px; padding:0 2px 1px; position:absolute; text-decoration:none; top:-7px; z-index:2; }
+/****************************************
+	Responsive
+****************************************/
+/* .r must be on html */
+.r { height:100%; }
+.r body { min-height:100%; }
+.r,
+.r body { max-width:100%; min-width:320px; }
+/* IE 7 */
+.r .show768,
+.r .show480,
+.r .show320 { *display:none !important; }
+/* IE 8 */
+@media \0screen {
+    .r .show768,
+    .r .show480,
+    .r .show320 { display:none 0 !important; }
+}
+/* Large Screen */
+@media only screen and (min-width:1006px) {
+    .r .show768,
+    .r .show480:not(.hide768),
+    .r .show320:not(.hide768):not(.hide480),
+    .r .show768.hide480.show320 { display:none !important; }
+}
+/* Not Large Screen */
+@media only screen and (max-width:1005px) {
+    .r body #GlobalWrpr { min-width:320px; padding:0; width:auto; }
+}
+/* iPad Portait */
+@media only screen and (min-width:768px) and (max-width:1005px) {
+    .r .hide768,
+    .r .show480:not(.show768),
+    .r .show320:not(.show768) { display:none !important; }
+}
+/* iPhone Landscape */
+@media only screen and (min-width:480px) and (max-width:767px) {
+    .r body { -webkit-text-size-adjust:none; }
+    .r .hide768:not(.show480),
+    .r .hide480,
+    .r .show320:not(.show480) { display:none !important; }
+}
+/* iPhone Portrait */
+@media only screen and (max-width:479px) {
+    .r body { -webkit-text-size-adjust:none; }
+    .r .hide768:not(.show480):not(.show320),
+    .r .hide480:not(.show320),
+    .r .hide320 { display:none !important; }
+}
+/****************************************
+	Print Classes
+****************************************/
+@media print {
+    .notPrintable { display:none !important; }
+}

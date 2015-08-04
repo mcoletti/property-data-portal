@@ -1,0 +1,90 @@
+@charset "utf-8";
+/* grid.css */
+.talGrid,
+.talGrid > .talCol { -moz-box-sizing:border-box; -webkit-box-sizing:border-box; box-sizing:border-box; }
+.talGrid { margin-left:-20px; word-wrap:break-word; }
+.talGrid:after { clear:both; content:''; display:table; }
+.talGrid > .talCol { float:left; min-height:1px; padding-left:20px; }
+.talGrid.talGridPadded { margin-left:0; padding:20px 20px 20px 0; }
+.talGrid.talGridNoGutters { margin-left:0; }
+.talGrid.talGridNoGutters > .talCol { padding:0; }
+.talGrid.talGridPadded.talGridNoGutters { padding-left:20px; }
+.talColRow { clear:both; }
+.talGrid ~ .talGrid,
+.talCol + .talColRow,
+.talCol + .talColRow ~ .talCol { margin-top:20px; }
+/* Widths */
+.w16 { width:16.666%; }
+.w20 { width:20%; }
+.w25 { width:25%; }
+.w30 { width:30%; }
+.w33 { width:33.333%; }
+.w40 { width:40%; }
+.w50 { width:50%; }
+.w60 { width:60%; }
+.w66 { width:66.666%; }
+.w70 { width:70%; }
+.w75 { width:75%; }
+.w80 { width:80%; }
+.w83 { width:83.333%; }
+.w100 { width:100%; }
+.h80{ height: 80%;}
+.h95{ height: 95%;}
+.h100{ height: 100%;}
+
+.w100px{
+    width: 100px;
+}
+.h100px{
+    height: 100px;
+}
+
+.ml150px{
+    margin-left: 150px;
+}
+
+.talGrid > .talColRight { float:right; }
+.talGrid > .talColRight + .talCol + .talColRight { clear:right; margin-top:20px; }
+.talGrid > :first-child + .talColRight + .talCol { clear:left; margin-top:20px; }
+/* Small Gutters */
+.talGridSmall { margin-left:-12px; }
+.talGridSmall.talGridPadded { padding:12px 12px 12px 0; }
+.talGridSmall > .talCol,
+.talGridSmall.talGridPadded.talGridNoGutters { padding-left:12px; }
+.talGridSmall .talCol + .talColRow,
+.talGridSmall .talCol + .talColRow ~ .talCol,
+.talGridSmall ~ .talGrid,
+.talGridSmall > .talColRight + .talCol + .talColRight,
+.talGridSmall > :first-child + .talColRight + .talCol { margin-top:12px; }
+@media only screen and (max-width:1005px) {
+    .full768 > .talCol { width:100%; }
+    .full768 > :first-child,
+    .talGrid > .hide768:first-child + .talCol { margin-top:0; }
+    .full768 > :first-child ~ .talCol { margin-top:20px; }
+    .talGridSmall.full768 > :first-child ~ .talCol { margin-top:12px; }
+}
+@media only screen and (max-width:767px) {
+    .full768 > .talCol,
+    .full480 > .talCol { width:100%; }
+    .full480 > :first-child,
+    .talGrid > .hide480:first-child + .talCol { margin-top:0; }
+    /* Reduce gutter width */
+    .talGrid { margin-left:-12px; }
+    .talGrid.talGridPadded { padding:12px 12px 12px 0; }
+    .talGrid > .talCol,
+    .talGrid.talGridPadded.talGridNoGutters { padding-left:12px; }
+    .talCol + .talColRow,
+    .talCol + .talColRow ~ .talCol,
+    .talGrid ~ .talGrid,
+    .talGrid > .talColRight + .talCol + .talColRight,
+    .talGrid > :first-child + .talColRight + .talCol,
+    .full768 > :first-child ~ .talCol,
+    .full480 > :first-child ~ .talCol { margin-top:12px; }
+}
+@media only screen and (max-width:479px) {
+    .full320 > .talCol { width:100%; }
+    .full768 > :first-child,
+    .full320 > :first-child,
+    .talGrid > .hide320:first-child + .talCol { margin-top:0; }
+    .full320 > :first-child ~ .talCol { margin-top:12px; }
+}

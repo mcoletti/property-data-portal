@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <!--the list of property files will be combined as one result.  If there are duplicate properties then the last one loaded wins.-->
+    <bean id="propertyConfigurer" class="com.codeitek.pdp.ui.common.PropertyConfigurator">
+        <property customerName="ignoreResourceNotFound" value="true"/>
+        <property customerName="locations">
+            <list>
+                <value>classpath:webui.properties</value>
+            </list>
+        </property>
+    </bean>
+
+    <!--<bean id="talonClient" class="com.codeitek.pdp.core.client.TalonClientImpl">-->
+        <!--<constructor-arg value="${rootApiUri}"/>-->
+    <!--</bean>  -->
+
+    <bean id="talonClient" class="com.codeitek.pdp.core.impl.TalonClientImpl">
+        <constructor-arg ref="httpClient"/>
+    </bean>
+ <bean id="httpClient" class="com.codeitek.pdp.core.impl.HttpClientImpl">
+        <constructor-arg value="${rootApiUri}"/>
+  </bean>
+    <bean id="util" class="com.codeitek.pdp.ui.common.Util">
+        <constructor-arg ref="propertyConfigurer"/>
+    </bean>
+
+    <!--<bean id="serviceFactory" class="org.cbros.cr.client.ServiceFactory">-->
+        <!--<constructor-arg>-->
+            <!--<value>${apiServerUrl}</value>-->
+        <!--</constructor-arg>-->
+    <!--</bean>-->
+
+    <!--<bean id="bootStrapServer" class="org.cbros.cr.webui.common.BootStrapServer">-->
+        <!--<constructor-arg>-->
+            <!--<value>${defaultEnvironment}</value>-->
+        <!--</constructor-arg>-->
+        <!--<constructor-arg>-->
+            <!--<value>${apiServerUrl}</value>-->
+        <!--</constructor-arg>-->
+    <!--</bean>-->
+    <!--<bean id="eventDispatcher" class="org.cbros.cr.webui.common.EventDispatcher"/>-->
+    <!--<bean id="eventListener" class="org.cbros.cr.webui.common.EventListener" abstract="true" depends-on="eventDispatcher"/>-->
+
+    <!--<bean id="deployEventListener" class="org.cbros.cr.webui.common.DeployEventListener" depends-on="eventListener"/>-->
+     <!--ApplicationContextHelper: allow access to the WebApplicationContext and ServletContext -->
+    <bean id="applicationContextHelper" class="com.codeitek.pdp.ui.common.ApplicationContextHelper"/>
+</beans>

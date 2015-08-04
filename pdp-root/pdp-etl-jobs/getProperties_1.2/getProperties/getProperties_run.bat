@@ -1,0 +1,3 @@
+%~d0
+ cd %~dp0
+ java -Xms256M -Xmx1024M -cp ../lib/advancedPersistentLookupLib-1.0.jar;../lib/commons-codec-1.3.jar;../lib/commons-collections-3.2.jar;../lib/commons-httpclient-3.0.1.jar;../lib/commons-logging-1.1.jar;../lib/dom4j-1.6.1.jar;../lib/jboss-serialization.jar;../lib/jcifs-1.3.0.jar;../lib/jsonpath.jar;../lib/json_simple-1.1.jar;../lib/log4j-1.2.15.jar;../lib/mysql-connector-java-5.1.22-bin.jar;../lib/TalendSAX.jar;../lib/trove.jar;../lib/systemRoutines.jar;../lib/userRoutines.jar;.;getproperties_1_2.jar;getpropfinacials_0_2.jar;loadfinacialdata_0_1.jar;loadpropertyimages_0_2.jar; talonetl.getproperties_1_2.getProperties --context=Default %* 

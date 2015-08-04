@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema>
+    <column comment="" default="" key="false" label="customerName" length="25"
+        nullable="true" originalDbColumnName="customerName"
+        pattern="&quot;dd-MM-yyyy&quot;" precision="0" talendType="id_String"/>
+    <column comment="" default="" key="false" label="image_url"
+        length="141" nullable="true" originalDbColumnName="image_url"
+        pattern="&quot;dd-MM-yyyy&quot;" precision="0" talendType="id_String"/>
+    <column comment="" default="" key="false" label="image_title"
+        length="46" nullable="true" originalDbColumnName="image_title"
+        pattern="&quot;dd-MM-yyyy&quot;" precision="0" talendType="id_String"/>
+    <column comment="" default="" key="false"
+        label="pba__propertytype__c" length="6" nullable="true"
+        originalDbColumnName="pba__propertytype__c"
+        pattern="&quot;dd-MM-yyyy&quot;" precision="0" talendType="id_String"/>
+    <column comment="" default="" key="false" label="rented_status__c"
+        length="9" nullable="true"
+        originalDbColumnName="rented_status__c"
+        pattern="&quot;dd-MM-yyyy&quot;" precision="0" talendType="id_String"/>
+    <column comment="" default="" key="false" label="zipcode__c"
+        length="5" nullable="true" originalDbColumnName="zipcode__c"
+        pattern="&quot;dd-MM-yyyy&quot;" precision="0" talendType="id_Integer"/>
+    <column comment="" default="" key="false" label="pba__city_pb__c"
+        length="12" nullable="true"
+        originalDbColumnName="pba__city_pb__c"
+        pattern="&quot;dd-MM-yyyy&quot;" precision="0" talendType="id_String"/>
+    <column comment="" default="" key="false"
+        label="pba__description_pb__c" length="233" nullable="true"
+        originalDbColumnName="pba__description_pb__c"
+        pattern="&quot;dd-MM-yyyy&quot;" precision="0" talendType="id_String"/>
+    <column comment="" default="" key="false" label="term_2__c"
+        length="17" nullable="true" originalDbColumnName="term_2__c"
+        pattern="&quot;dd-MM-yyyy&quot;" precision="0" talendType="id_String"/>
+    <column comment="" default="" key="false" label="term_1__c"
+        length="30" nullable="true" originalDbColumnName="term_1__c"
+        pattern="&quot;dd-MM-yyyy&quot;" precision="0" talendType="id_String"/>
+    <column comment="" default="" key="false" label="pba__status__c"
+        length="14" nullable="true"
+        originalDbColumnName="pba__status__c"
+        pattern="&quot;dd-MM-yyyy&quot;" precision="0" talendType="id_String"/>
+    <column comment="" default="" key="false" label="year_built__c"
+        length="4" nullable="true" originalDbColumnName="year_built__c"
+        pattern="&quot;dd-MM-yyyy&quot;" precision="0" talendType="id_Integer"/>
+    <column comment="" default="" key="false" label="pba__address_pb__c"
+        length="25" nullable="true"
+        originalDbColumnName="pba__address_pb__c"
+        pattern="&quot;dd-MM-yyyy&quot;" precision="0" talendType="id_String"/>
+    <column comment="" default="" key="false"
+        label="financed_net_yield_1__c" length="18" nullable="true"
+        originalDbColumnName="financed_net_yield_1__c"
+        pattern="&quot;dd-MM-yyyy&quot;" precision="16" talendType="id_Float"/>
+    <column comment="" default="" key="false"
+        label="monthly_cash_flow_with_financing_2__c" length="7"
+        nullable="true"
+        originalDbColumnName="monthly_cash_flow_with_financing_2__c"
+        pattern="&quot;dd-MM-yyyy&quot;" precision="4" talendType="id_Float"/>
+    <column comment="" default="" key="false"
+        label="financed_net_yield_2__c" length="18" nullable="true"
+        originalDbColumnName="financed_net_yield_2__c"
+        pattern="&quot;dd-MM-yyyy&quot;" precision="16" talendType="id_Float"/>
+    <column comment="" default="" key="false"
+        label="monthly_cash_flow_with_financing_1__c" length="7"
+        nullable="true"
+        originalDbColumnName="monthly_cash_flow_with_financing_1__c"
+        pattern="&quot;dd-MM-yyyy&quot;" precision="4" talendType="id_Float"/>
+    <column comment="" default="" key="false" label="interest_rate_2__c"
+        length="4" nullable="true"
+        originalDbColumnName="interest_rate_2__c"
+        pattern="&quot;dd-MM-yyyy&quot;" precision="3" talendType="id_Float"/>
+    <column comment="" default="" key="false" label="interest_rate_1__c"
+        length="4" nullable="true"
+        originalDbColumnName="interest_rate_1__c"
+        pattern="&quot;dd-MM-yyyy&quot;" precision="2" talendType="id_Float"/>
+    <column comment="" default="" key="false"
+        label="monthly_cash_flow__c" length="6" nullable="true"
+        originalDbColumnName="monthly_cash_flow__c"
+        pattern="&quot;dd-MM-yyyy&quot;" precision="3" talendType="id_Float"/>
+    <column comment="" default="" key="false" label="noi__c" length="7"
+        nullable="true" originalDbColumnName="noi__c"
+        pattern="&quot;dd-MM-yyyy&quot;" precision="3" talendType="id_Float"/>
+    <column comment="" default="" key="false"
+        label="noi_with_financing_2__c" length="8" nullable="true"
+        originalDbColumnName="noi_with_financing_2__c"
+        pattern="&quot;dd-MM-yyyy&quot;" precision="4" talendType="id_Float"/>
+    <column comment="" default="" key="false"
+        label="noi_with_financing_1__c" length="7" nullable="true"
+        originalDbColumnName="noi_with_financing_1__c"
+        pattern="&quot;dd-MM-yyyy&quot;" precision="3" talendType="id_Float"/>
+    <column comment="" default="" key="false" label="price_per_ft__c"
+        length="5" nullable="true"
+        originalDbColumnName="price_per_ft__c"
+        pattern="&quot;dd-MM-yyyy&quot;" precision="3" talendType="id_Float"/>
+    <column comment="" default="" key="false" label="price__c"
+        length="8" nullable="true" originalDbColumnName="price__c"
+        pattern="&quot;dd-MM-yyyy&quot;" precision="3" talendType="id_Float"/>
+    <column comment="" default="" key="false"
+        label="yearly_interest_payment_1__c" length="6" nullable="true"
+        originalDbColumnName="yearly_interest_payment_1__c"
+        pattern="&quot;dd-MM-yyyy&quot;" precision="2" talendType="id_Float"/>
+    <column comment="" default="" key="false"
+        label="monthly_interest_payment_2__c" length="6" nullable="true"
+        originalDbColumnName="monthly_interest_payment_2__c"
+        pattern="&quot;dd-MM-yyyy&quot;" precision="3" talendType="id_Float"/>
+    <column comment="" default="" key="false"
+        label="interest_payment_1__c" length="6" nullable="true"
+        originalDbColumnName="interest_payment_1__c"
+        pattern="&quot;dd-MM-yyyy&quot;" precision="3" talendType="id_Float"/>
+    <column comment="" default="" key="false" label="down_payment_2__c"
+        length="7" nullable="true"
+        originalDbColumnName="down_payment_2__c"
+        pattern="&quot;dd-MM-yyyy&quot;" precision="2" talendType="id_Float"/>
+    <column comment="" default="" key="false" label="down_payment_1__c"
+        length="7" nullable="true"
+        originalDbColumnName="down_payment_1__c"
+        pattern="&quot;dd-MM-yyyy&quot;" precision="2" talendType="id_Float"/>
+    <column comment="" default="" key="false" label="cash_net_yield__c"
+        length="5" nullable="true"
+        originalDbColumnName="cash_net_yield__c"
+        pattern="&quot;dd-MM-yyyy&quot;" precision="3" talendType="id_Float"/>
+    <column comment="" default="" key="false"
+        label="monthly_management__c" length="5" nullable="true"
+        originalDbColumnName="monthly_management__c"
+        pattern="&quot;dd-MM-yyyy&quot;" precision="3" talendType="id_Float"/>
+    <column comment="" default="" key="false" label="management__c"
+        length="6" nullable="true" originalDbColumnName="management__c"
+        pattern="&quot;dd-MM-yyyy&quot;" precision="3" talendType="id_Float"/>
+    <column comment="" default="" key="false"
+        label="monthly_insurance__c" length="5" nullable="true"
+        originalDbColumnName="monthly_insurance__c"
+        pattern="&quot;dd-MM-yyyy&quot;" precision="3" talendType="id_Float"/>
+    <column comment="" default="" key="false" label="insurance__c"
+        length="6" nullable="true" originalDbColumnName="insurance__c"
+        pattern="&quot;dd-MM-yyyy&quot;" precision="3" talendType="id_Float"/>
+    <column comment="" default="" key="false" label="taxes__c"
+        length="6" nullable="true" originalDbColumnName="taxes__c"
+        pattern="&quot;dd-MM-yyyy&quot;" precision="3" talendType="id_Float"/>
+    <column comment="" default="" key="false" label="monthly_taxes__c"
+        length="5" nullable="true"
+        originalDbColumnName="monthly_taxes__c"
+        pattern="&quot;dd-MM-yyyy&quot;" precision="3" talendType="id_Float"/>
+    <column comment="" default="" key="false" label="monthlyrent__c"
+        length="6" nullable="true" originalDbColumnName="monthlyrent__c"
+        pattern="&quot;dd-MM-yyyy&quot;" precision="3" talendType="id_Float"/>
+    <column comment="" default="" key="false" label="annual_rents__c"
+        length="7" nullable="true"
+        originalDbColumnName="annual_rents__c"
+        pattern="&quot;dd-MM-yyyy&quot;" precision="3" talendType="id_Float"/>
+    <column comment="" default="" key="false"
+        label="est_of_market_value__c" length="5" nullable="true"
+        originalDbColumnName="est_of_market_value__c"
+        pattern="&quot;dd-MM-yyyy&quot;" precision="3" talendType="id_Float"/>
+    <column comment="" default="" key="false"
+        label="est_value_per_rent_multiplier__c" length="8"
+        nullable="true"
+        originalDbColumnName="est_value_per_rent_multiplier__c"
+        pattern="&quot;dd-MM-yyyy&quot;" precision="3" talendType="id_Float"/>
+    <column comment="" default="" key="false" label="estimated_value__c"
+        length="0" nullable="true"
+        originalDbColumnName="estimated_value__c"
+        pattern="&quot;dd-MM-yyyy&quot;" precision="0" talendType="id_String"/>
+    <column comment="" default="" key="false"
+        label="est_replacement_cost_per_sq_ft__c" length="4"
+        nullable="true"
+        originalDbColumnName="est_replacement_cost_per_sq_ft__c"
+        pattern="&quot;dd-MM-yyyy&quot;" precision="2" talendType="id_Float"/>
+    <column comment="" default="" key="false"
+        label="est_replacement_cost__c" length="8" nullable="true"
+        originalDbColumnName="est_replacement_cost__c"
+        pattern="&quot;dd-MM-yyyy&quot;" precision="3" talendType="id_Float"/>
+    <column comment="" default="" key="false"
+        label="pba__totalarea_pb__c" length="6" nullable="true"
+        originalDbColumnName="pba__totalarea_pb__c"
+        pattern="&quot;dd-MM-yyyy&quot;" precision="2" talendType="id_Float"/>
+    <column comment="" default="" key="false" label="bedrooms__c"
+        length="3" nullable="true" originalDbColumnName="bedrooms__c"
+        pattern="&quot;dd-MM-yyyy&quot;" precision="2" talendType="id_Float"/>
+    <column comment="" default="" key="false" label="bathrooms__c"
+        length="3" nullable="true" originalDbColumnName="bathrooms__c"
+        pattern="&quot;dd-MM-yyyy&quot;" precision="2" talendType="id_Float"/>
+</schema>

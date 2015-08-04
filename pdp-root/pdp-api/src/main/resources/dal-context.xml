@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- DAL Core Beans-->
+    <bean id="customerDao" class="com.codeitek.pdp.dal.impl.CustomerJdbcDao"/>
+    <bean id="customerAttributesJdbcDao" class="com.codeitek.pdp.dal.impl.CustomerAttributesJdbcDao"/>
+    <bean id="propertyAttributeDataJdbcDao" class="com.codeitek.pdp.dal.impl.PropertyAttributeDataJdbcDao"/>
+    <bean id="propertyAttributesJdbcDao" class="com.codeitek.pdp.dal.impl.PropertyAttributesJdbcDao"/>
+    <bean id="propertyDataJdbcDao" class="com.codeitek.pdp.dal.impl.PropertyDataJdbcDao"/>
+    <bean id="propertyTypeJdbcDao" class="com.codeitek.pdp.dal.impl.PropertyTypeJdbcDao"/>
+    <bean id="propertyStatusJdbcDao" class="com.codeitek.pdp.dal.impl.PropertyStatusMapJdbcDao"/>
+    <bean id="propertyFinancialJdbcDao" class="com.codeitek.pdp.dal.impl.PropertyFinancialJdbcDao"/>
+    <bean id="propertyImagesJdbcDao" class="com.codeitek.pdp.dal.impl.PropertyImagesJdbcDao"/>
+    <bean id="financialKeyJdbcDao" class="com.codeitek.pdp.dal.impl.FinancialKeyJdbcDao"/>
+    <bean id="cityJdbcDao" class="com.codeitek.pdp.dal.impl.CityJdbcDao"/>
+    <bean id="stateJdbcDao" class="com.codeitek.pdp.dal.impl.StateJdbcDao"/>
+    <bean id="zipCodesJdbcDao" class="com.codeitek.pdp.dal.impl.ZipCodesJdbcDao"/>
+    <bean id="dataSourceJdbcDao" class="com.codeitek.pdp.dal.impl.DataSourceJdbcDao"/>
+    <bean id="utils" class="com.codeitek.pdp.dal.Utils"/>
+
+    <!--DAL Admin Beans0-->
+    <bean id="userActivityLogJdbcDao" class="com.codeitek.pdp.dal.impl.UserActivityLogJdbcDao"/>
+    <bean id="userJdbcDao" class="com.codeitek.pdp.dal.impl.UserJdbcDao"/>
+    <bean id="userAttributesJdbcDao" class="com.codeitek.pdp.dal.impl.UserAttributesJdbcDao"/>
+    <bean id="systemGroupMembersJdbcDao" class="com.codeitek.pdp.dal.impl.SystemGroupMembersJdbcDao"/>
+    <bean id="systemRolesJdbcDao" class="com.codeitek.pdp.dal.impl.SystemRolesJdbcDao"/>
+    <bean id="groupMembersJdbcDao" class="com.codeitek.pdp.dal.impl.GroupMembersJdbcDao"/>
+    <bean id="groupsJdbcDao" class="com.codeitek.pdp.dal.impl.GroupsJdbcDao"/>
+    <bean id="roleDataJdbcDao" class="com.codeitek.pdp.dal.impl.RoleDataJdbcDao"/>
+    <bean id="accountLevelJdbcDao" class="com.codeitek.pdp.dal.impl.AccountLevelJdbcDao"/>
+
+    <bean id="attributesJdbcDao" class="com.codeitek.pdp.dal.impl.AttributesJdbcDao"/>
+    <bean id="uiElementTypesJdbcDao" class="com.codeitek.pdp.dal.impl.UiElementTypesJdbcDao"/>
+    <bean id="uiPageLayoutJdbcDao" class="com.codeitek.pdp.dal.impl.UiPageLayoutJdbcDao"/>
+    <bean id="uiSectionGroupsJdbcDao" class="com.codeitek.pdp.dal.impl.UiSectionGroupsJdbcDao"/>
+    <bean id="uiSectionsJdbcDao" class="com.codeitek.pdp.dal.impl.UiSectionsJdbcDao"/>
+    <bean id="uiElementTypeAttributesJdbcDao" class="com.codeitek.pdp.dal.impl.UiElementTypeAttributesJdbcDao"/>
+    <bean id="uiPageAttributesJdbcDao" class="com.codeitek.pdp.dal.impl.UiPageAttributesJdbcDao"/>
+    <bean id="pagelayoutJdbcDao" class="com.codeitek.pdp.dal.impl.PageLayoutJdbcDao"/>
+    <bean id="authoritiesJdbcDao" class="com.codeitek.pdp.dal.impl.AuthorityJdbcDao"/>
+    <bean id="authorityUserMapDao" class="com.codeitek.pdp.dal.impl.AuthorityUserMapDaoImpl"/>
+
+
+    <!-- Service Beans-->
+    <bean id="administrationService" class="com.codeitek.pdp.service.AdministrationServiceImpl"/>
+    <bean id="propertyCoreDao" class="com.codeitek.pdp.service.PropertyCoreDaoImpl"/>
+    <bean id="propertyService" class="com.codeitek.pdp.service.PropertyServiceImpl"/>
+    <bean id="coreDao" class="com.codeitek.pdp.service.CoreDaoImpl"/>
+    <bean id="cacheManager" class="com.codeitek.pdp.cache.CacheManagerImpl">
+        <constructor-arg value="false"/>
+    </bean>
+
+</beans>

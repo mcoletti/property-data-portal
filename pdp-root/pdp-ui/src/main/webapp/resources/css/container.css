@@ -1,0 +1,73 @@
+/**************************************************
+	container.css
+	3 Outer and 1 Inner Container Types
+	.con - Main Content
+	.conSecond - Secondary Content (sidebar content)
+	.conThird - Tertiary Content (i.e. help/marketing)
+	.innerCon - Inner Content Only (must be descendant of .con)
+***************************************************/
+.shadowBox{
+    box-shadow: 5px 5px 5px #888888;
+    padding: 2px 0px 2px 20px;
+    width: 500px;
+    background-color: #9C9C9C;
+    overflow: auto;
+    color: #fff;
+}
+.con .conBody,
+.conSecond,
+.conThird { background:#fff; border:1px solid #fff; -webkit-border-radius:5px; border-radius:5px; padding:16px; position:relative; }
+.conSecond,
+.conThird { padding-top:12px; }
+.conHeader:after,
+.conBody:after,
+.conSecond:after,
+.conThird:after { clear:both; content:''; display:table; }
+.conHeader a,
+.conHeader button { float:right; }
+.conSecond .conHeader a,
+.conSecond .conHeader button { position:relative; top:-4px;z-index: 1 }
+.conSecond .conHeader ~ .conHeader { margin-top:20px; }
+.con .conTitle { color:#ffffff; font-size:18px; font-weight:700; line-height:1.1em; padding-bottom:8px; text-shadow:0 -1px rgba(255,255,255,.5); }
+.con .innerConTitle,
+.conSecond .conTitle,
+.conThird .conTitle { border-bottom:1px dotted #c3be7f; color:#887c71; font-size:16px; margin:0 0 12px 0; padding-bottom:4px; }
+.conBody > :first-child { margin-top:5px; }
+.conThird { background:#f3f2ea url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAtCAMAAABYpfH2AAAAP1BMVEX49/H//vj+/ff6+fL08+zz8uv5+PL19Oz9/Pj5+PH19O37+vT39u/9/Pb08+v+/fn8+/X29e76+fP49/D//vpTOvXOAAAAM0lEQVR42m3CSRKAIBAEwUIQWRTZ/v9WO+ZsZLJ/OV45SDzSTZVpPJEMLHPLMEUuAk3OD3nNAnIqfXVsAAAAAElFTkSuQmCC) repeat-x 0 0; background-size:auto 33%; }
+.conThird .conTitle { color:#887c71; text-align:center; }
+.conFooter { margin-top:16px; }
+/*.conFooter div {border-top:1px solid #000; color:#887c71; font-size:16px; margin:0 0 12px 0; padding-bottom:4px; }*/
+.conFooterAlt { color:#887c71; margin-top:12px; text-align:center; }
+.conFooter > a,
+.conFooterAlt > a { margin-top:12px; }
+.conFooter > a:first-child,
+.conFooterAlt > a:first-child { margin-top:0; }
+.con ~ .con,
+.conSecond ~ .conSecond,
+.conSecond ~ .conThird,
+.conThird ~ .conThird { margin-top:20px; }
+.con .innerCon { border-left:1px dotted #ddd; padding:0 16px 16px 16px; }
+.con .innerCon:first-child { margin-top:12px; }
+/* Container Sections */
+.conSection { border-top:1px solid #dbd9d3; box-shadow:inset 0 1px 2px -1px #fff; margin:20px -16px 0 -16px; padding:20px 16px 0 16px; }
+a.conSection { display:block; }
+@media only screen and (max-width:767px) {
+    .con .conBody,
+    .conSecond,
+    .conThird { padding:8px; }
+    .con ~ .con,
+    .conSecond ~ .conSecond,
+    .conSecond ~ .conThird,
+    .conThird ~ .conThird { margin-top:12px; }
+    .con .innerCon { border-left:0; padding:0 0 8px 0; }
+    .con .innerCon:first-child { margin-top:0; }
+    .conSection { margin:12px -8px 0 -8px; padding:12px 8px 0 8px; }
+}
+/* Container List */
+.con .conList { padding:0; }
+.conList .conSection:first-child { border-top-left-radius:inherit; border-top-right-radius:inherit; border-top:0; }
+.conList .conSection:last-child { border-bottom-left-radius:inherit; border-bottom-right-radius:inherit; }
+.conList .conSection { margin:0; padding-bottom:20px; }
+@media only screen and (max-width:767px) {
+    .conList .conSection { padding-bottom:12px; }
+}

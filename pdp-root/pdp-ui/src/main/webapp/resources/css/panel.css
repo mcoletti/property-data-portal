@@ -1,0 +1,72 @@
+
+@charset "utf-8";
+/* panel.css - requires subcon.css */
+.panel { margin:0 auto; position:relative; width:972px; background:#f8f8f3; }
+.panel .outerRight { background-color:#f3f2eb; border-left:0; border-radius:0 5px 5px 0; border-radius:0 0; bottom:10px; left:651px; position:absolute; right:0; top:10px; z-index:1; }
+.panel .outerLeft { background-color:#fff; bottom:0; left:0; position:absolute; right:321px; top:0; z-index:2; }
+.panel .innerPanel { padding-left:1px; position:relative; z-index:3; }
+.panel .innerPanel:after { clear:both; content:"."; display:block; height:0; visibility:hidden; }
+.panel .innerPanel > .left { float:left; min-height:36px; padding:10px 9px; width:201px; }
+.panel .innerPanel > .right { float:left; margin:9px 0; min-height:10px; padding:0; width:700px; }
+.panel .innerPanel > .right > .subCon {width: 350px;background-color:#f3f2eb; border-left:0; border-radius:0 5px 5px 0; border-radius:0 0; margin:10px 0 0; }
+
+.panel .innerPanel > .right > .subCon:first-child { margin-top:0; }
+.panel .outerRight ~ .innerPanel > .right { padding:10px; width:301px; }
+.panel .outerRight ~ .innerPanel > .right > .subCon { background-color:#fff; border-left:1px solid #cfc2a7; border-radius:5px; margin:0; }
+.panel .outerRight ~ .innerPanel > .right > .subCon.subConYellow { background-color:#fdfae8; }
+.panel .outerRight ~ .innerPanel > .right > .subCon.subConGreen { background-color:#eff2d3; }
+.panel .outerRight ~ .innerPanel > .right > .subCon.subConGray { background-color:#f3f2eb; }
+
+/****************************************
+	Sizes
+****************************************/
+
+
+.panel.large .outerLeft { right:401px; }
+.panel.large .outerRight { left:571px; }
+.panel.large .left { width:552px; }
+.panel.large .right { width:401px; }
+.panel.large .outerRight ~ .innerPanel > .right { width:381px; }
+.panel.small .outerLeft { right:201px; }
+.panel.small .outerRight { left:771px; }
+.panel.small .left { width:752px; }
+.panel.small .right { width:201px; }
+.panel.small .outerRight ~ .innerPanel > .right { width:181px; }
+
+/****************************************
+	Alternate Side
+***************************************/
+.panel.altSide .outerRight { background-color:#fff; border-left:1px solid #b8ac92; border-radius:5px; border-radius:0\0/; bottom:0; left:321px; right:0; top:0; z-index:2; }
+.panel.altSide .outerLeft { background-color:#f3f2eb; border-radius:5px 0 0 5px; border-radius:0\0/; border-right:0; bottom:10px; left:0; right:651px; top:10px; z-index:1; }
+.panel.altSide .innerPanel { padding:0 1px 0 0; }
+.panel.altSide .innerPanel > .left { margin:9px 0; min-height:10px; padding:0; width:321px; }
+.panel.altSide .innerPanel > .left > .subCon { background-color:#f3f2eb; border-radius:5px 0 0 5px; border-radius:0\0/; border-right:0; margin:10px 0 0; }
+.panel.altSide .innerPanel > .left > .subCon:first-child { margin-top:0; }
+.panel.altSide .outerLeft ~ .innerPanel > .left { padding:10px; width:301px; }
+.panel.altSide .outerLeft ~ .innerPanel > .left > .subCon { background-color:#fff; border-radius:5px; border-right:1px solid #cfc2a7; margin:0; }
+.panel.altSide .outerLeft ~ .innerPanel > .left > .subCon.subConYellow { background-color:#fdfae8; }
+.panel.altSide .outerLeft ~ .innerPanel > .left > .subCon.subConGreen { background-color:#eff2d3; }
+.panel.altSide .outerLeft ~ .innerPanel > .left > .subCon.subConGray { background-color:#f3f2eb; }
+.panel.altSide .outerLeft ~ .innerPanel > .left > .subCon:first-child { margin-top:0; }
+.panel.altSide .innerPanel > .right { margin:0; min-height:36px; padding:10px 9px; width:632px; }
+.panel.altSide .innerPanel > .right > .subCon { background-color:#fff; border-left:1px solid #b8ac92; border-radius:5px; border-radius:0\0/; margin:0; }
+
+
+
+/****************************************
+	Alternate Side Sizes
+***************************************/
+.panel.altSide.large .outerLeft { right:571px; }
+.panel.altSide.large .outerRight { left:401px; }
+.panel.altSide.large .left { width:401px; }
+.panel.altSide.large .outerLeft ~ .innerPanel > .left { width:381px; }
+.panel.altSide.large .outerRight ~ innerPanel > .right { width:552px; }
+.panel.altSide.large .outerLeft ~ .innerPanel > .right { width:552px; }
+.panel.altSide.small .outerLeft { right:771px; }
+.panel.altSide.small .outerRight { left:201px; }
+.panel.altSide.small .left { width:201px; }
+.panel.altSide.small .outerLeft ~ .innerPanel > .left { width:181px; }
+.panel.altSide.small .outerRight ~ .innerPanel > .right { width:752px; }
+.panel.altSide.small .outerLeft ~ .innerPanel > .right { width:752px; }
+
+

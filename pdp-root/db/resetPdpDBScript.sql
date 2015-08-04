@@ -1,0 +1,16 @@
+
+/*
+PRE ETL Lload MySql DB Script
+*/
+
+/*
+Delete property Financial Data
+*/
+DELETE FROM TALONDB.PROPERTY_FINACIAL;
+
+
+
+/*
+Reset AUTO Increment
+*/
+ALTER TABLE TALONDB.PROPERTY_FINACIAL AUTO_INCREMENT =1;

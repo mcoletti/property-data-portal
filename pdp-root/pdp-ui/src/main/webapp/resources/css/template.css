@@ -1,0 +1,44 @@
+/**************************************************
+	template.css
+***************************************************/
+.divRow{
+    width: 98%;border-width: thin;border-bottom: dotted #b0b0b0;padding-top: 10px
+}
+.divRow .Innerleft{float: left;}
+.divRow .InnerRight{margin-left: 150px;}
+
+
+.page {box-shadow: 2px 2px 2px #626262; font:400 13px Georgia,"Bitstream Charter",serif ; background:#E7E7E7; border:1px solid #E7E7E7; border-radius:4px; -moz-box-sizing:border-box; -webkit-box-sizing:border-box; box-sizing:border-box; margin:20px auto 0 auto; width:990px; }
+.pageHeader {background: #003147 url(images/ui-bg_highlight-soft_33_003147_1x100.png) 20% 20% repeat-x;;color: #ffffff; border-bottom:1px solid #171D28; border-radius:5px 5px 0 0; padding:12px 20px 0 20px; position:relative; }
+/* Breadcrumbs */
+.pageCrumbs { font-size:12px; padding-bottom:16px; position:relative; }
+.pageCrumbs a {font-size:12px; padding-bottom:16px; position:relative;color: #A3B582}
+.pageCrumb {color: #A3B582}
+/* Standardized Back Button */
+.pageBack { font-weight:bold; text-decoration:none; }
+.pageBack:before { content:'\2039'; font:18px/10px "Lucida Console", Monaco, Tahoma, monospace; font-weight:bold; left:-1px; position:relative; top:.5px; }
+/* Page Title */
+.pageTitle { color:#695d49; font-size:32px; line-height:1.1em; padding-bottom:12px;margin-left: 10px; position:relative; text-shadow:0 -1px 0 #e7e4dd; }
+.pageIntro { max-width:66%; padding-bottom:8px; }
+/* Secondary Nav for Page */
+.pageNav { padding-bottom:4px;margin-left: 10px }
+.pageNav a { display:inline-block; margin-right:8px; padding:4px 0 8px 0; color: #A3B582}
+/* Header image */
+.pageHeaderImage { background:none no-repeat 100% 0; border-top-right-radius:4px; height:100%; max-height:none; overflow:hidden; position:absolute; right:0; top:0; width:50%; }
+/*.pageHeaderImage:before { background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJoAAAABCAYAAAAmXreXAAAAMklEQVQoz2P8DwQMxIP/ROB/ePj/iKDxsfGJUYL/kiFPbTFS5EnFhMIQGxsfTSieMTAAuhCSAdUMiyMAAAAASUVORK5CYII=) repeat-y 0 0; bottom:0; content:''; display:block; left:0; position:absolute; top:0; width:154px; }*/
+.pageHeaderCaption { background-color:#fff; background-color:rgba(255, 255, 255, .8); bottom:0; color:#4a4134; left:0; padding:12px 20px 12px 0; position:absolute; right:0; text-align:right; }
+.pageHeaderImage ~ .pageTitle { max-width:64%; z-index:2; }
+@media only screen and (max-width:1005px) {
+    .page { border-left:0; border-radius:0; border-right:0; border-top:0; margin-top:0; width:100%; }
+    .pageHeader { padding-top:16px; }
+    .pageIntro,
+    .pageHeaderImage ~ .pageTitle { max-width:none; }
+    .pageHeaderImage { display:none; }
+}
+@media only screen and (max-width:767px) {
+    .pageHeader { padding-left:12px; padding-right:12px; }
+    .pageTitle { font-size:26px; }
+}
+@media print {
+    .pageCrumbs { display:none; }
+}

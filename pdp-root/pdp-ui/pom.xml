@@ -1,0 +1,178 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <artifactId>pdp-root</artifactId>
+        <groupId>com.codeitek.pdp</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>pdp-ui</artifactId>
+    <packaging>war</packaging>
+    <name>Property Data Portal UI</name>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.codeitek.pdp</groupId>
+            <artifactId>pdp-core</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.codeitek.pdp</groupId>
+            <artifactId>pdp-model</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+        <!-- Spring Core-->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-webmvc</artifactId>
+        </dependency>
+
+        <!-- Spring Security -->
+
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-core</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-web</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-config</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.json</groupId>
+            <artifactId>json</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.codehaus.jackson</groupId>
+            <artifactId>jackson-mapper-asl</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>servlet-api</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>javax.servlet.jsp</groupId>
+            <artifactId>jsp-api</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>jstl</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>jcl-over-slf4j</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-log4j12</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <finalName>pdp-portal</finalName>
+    </build>
+
+    <profiles>
+        <profile>
+            <id>pushWebCode</id>
+            <build>
+                <finalName>${project.artifactId}</finalName>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-compiler-plugin</artifactId>
+                    </plugin>
+
+                    <plugin>
+                        <artifactId>maven-antrun-plugin</artifactId>
+                        <executions>
+                            <execution>
+                                <phase>compile</phase>
+                                <configuration>
+                                    <tasks>
+                                        <delete>
+                                            <fileset dir="${project.build.directory}/pdp-portal/WEB-INF/views"
+                                                     includes="**/*"/>
+                                            <fileset dir="${project.build.directory}/pdp-portal/WEB-INF/messages"
+                                                     includes="**/*"/>
+                                            <fileset dir="${project.build.directory}/pdp-portal/WEB-INF/spring"
+                                                     includes="**/*"/>
+                                            <fileset dir="${project.build.directory}/pdp-portal/resources"
+                                                     includes="**/*"/>
+                                        </delete>
+
+                                        <copy todir="${project.build.directory}/pdp-portal/WEB-INF/views">
+                                            <fileset
+                                                    dir="${project.basedir}/src/main/webapp/WEB-INF/views"
+                                                    includes="**/*"/>
+                                        </copy>
+
+                                        <copy todir="${project.build.directory}/pdp-portal/WEB-INF/messages">
+                                            <fileset
+                                                    dir="${project.basedir}/src/main/webapp/WEB-INF/messages"
+                                                    includes="**/*"/>
+                                        </copy>
+                                        <copy todir="${project.build.directory}/pdp-portal/WEB-INF/spring">
+                                            <fileset
+                                                    dir="${project.basedir}/src/main/webapp/WEB-INF/spring"
+                                                    includes="**/*"/>
+                                        </copy>
+                                        <copy todir="${project.build.directory}/pdp-portal/resources">
+                                            <fileset
+                                                    dir="${project.basedir}/src/main/webapp/resources"
+                                                    includes="**/*"/>
+                                        </copy>
+                                        <!--<delete file="${tomcat.webapp.dir}/cr-webui.war"/>-->
+                                        <!--<delete dir="${tomcat.webapp.dir}/cr-webui"/>-->
+                                        <!--<copy file="${project.build.directory}/cr-webui.war"-->
+                                        <!--todir="${tomcat.webapp.dir}"/>-->
+                                    </tasks>
+                                </configuration>
+                                <goals>
+                                    <goal>run</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
+</project>

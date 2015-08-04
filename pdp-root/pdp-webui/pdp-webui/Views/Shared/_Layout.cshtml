@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+    @Styles.Render("~/Content/css/style.css")
+    @Styles.Render("~/Content/css/reset.css")
+    @Styles.Render("~/Content/css/carousel.css")
+    @Scripts.Render("http://c.mfcreative.com/lib/jquery/jquery-1.7.1.min.js")
+@*    @Scripts.Render("~/Scripts/jquery-1.10.2.min.js")*@
+    @Scripts.Render("~/Scripts/custom/carousel.js")
+@*    @Scripts.Render("~/bundles/modernizr")*@
+
+</head>
+<body>
+    @RenderPage("_header.cshtml")
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+        </footer>
+    </div>
+
+ 
+@*    @Scripts.Render("~/bundles/bootstrap")*@
+@*    @RenderSection("scripts", required: false)*@
+
+    @RenderPage("_footer.cshtml")
+</body>
+</html>

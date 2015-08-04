@@ -1,0 +1,116 @@
+/****************************************
+	css/V2/tab.css
+*****************************************/
+.tabs { -webkit-tap-highlight-color:rgba(0, 0, 0, 0); line-height:30px; padding-top:8px; position:relative; z-index:2; }
+.tabs2:after,
+.tabs:after { clear:both; content:''; display:table; }
+.tabs > .tab,
+.tabs2 > .tab,
+.tabExpand { -webkit-appearance:none; border:0; cursor:pointer; float:left; left:0; line-height:inherit; padding:0 11px; text-align:left; text-decoration:none; vertical-align:middle; }
+.tabs > .tab { -webkit-tap-highlight-color:#aebe15; }
+.tabs > .tab,
+.tabExpand { background:#fff; border-right:1px solid #b8ac92; border-top:1px solid #b8ac92; color:#445708; }
+.tabs > .tab:first-child { border-left:1px solid #d0c4a9; border-top-left-radius:4px; }
+.tabs > .tab:last-of-type,
+.tabExpand { border-top-right-radius:4px; }
+.tabExpand { display:none; height:36px; padding:0 16px; position:relative; text-align:center; width:10px; }
+.tabs > .tab:hover { background:#aebe15; color:#fff; }
+/* .tab.tabActive are combined to override hover */
+.tabs > .tab.tabActive { background:#f8f8f3; border-bottom-color:#f8f8f3; color:#445708; cursor:default; padding-bottom:1px; margin-bottom:-1px; }
+.tabContent { display:none }
+.tabContent.tabActive { display:block; }
+/* Zero out margin to allow for grids to be tabbed */
+.tabContent ~ .tabContent { margin-top:0; }
+.tabExpand::before { border:6px solid transparent; border-left-color:#695E49; border-right-width:0; content:''; display:inline-block; font-size:0; height:0; left:50%; line-height:0; margin:-5px 0 0 -3px; position:absolute; top:50%; width:0; }
+.tabsExpanded .tabExpand::before { border-bottom-width:0; border-left-color:transparent; border-right-width:6px; border-top-color:#695E49; margin:-3px 0 0 -6px; }
+/* Keep color to fix occasional webkit painting issue. */
+/* Keep both classes .tabs.tabsExpanded to override tabsCon styles. */
+.tabs.tabsExpanded > .tabExpand { background:#aebe15; color:#fff; }
+.tabsExpanded > .tabExpand::before { border-left-color:#fff; }
+.tabsExpanded > .tabExpand::before { border-left-color:transparent; border-top-color:#fff; }
+/* Only set z-index on tabbed content container when menu is expanded */
+.tabMenuExpanded { position:relative; z-index:1; }
+@media only screen and (max-width:767px) {
+    .tabs { line-height:36px; padding-top:0; }
+    .tabs480 .tabExpand { display:inline-block; }
+    .tabs.tabs480 > .tab:not(.tabActive) { display:none; }
+    .tabs.tabs480 > .tab.tabActive { border-left:1px solid #b8ac92; border-radius:4px 0 0 0; }
+}
+@media only screen and (min-width:480px) and (max-width:767px) {
+    .tabs.tabs480.tabsExpanded > .tab:first-child:not(.tabActive) { border-top-left-radius:0; }
+    .tabs.tabs480.tabsExpanded > .tab:not(.tabActive) { border-left:1px solid #b8ac92; box-shadow:2px 2px 3px rgba(82, 71, 49, .4); display:inline-block; position:absolute; max-width:300px; width:85%; }
+    .tabs.tabs480.tabsExpanded > .tab.tabLast { border-radius:0 0 4px 0; border-bottom:1px solid #b8ac92; }
+}
+@media only screen and (max-width:479px) {
+    .tabs320 .tabExpand { display:inline-block; }
+    .tabs.tabs320 > .tab:not(.tabActive) { display:none; }
+    .tabs.tabs320 > .tab.tabActive:not(:only-child) { border-left:1px solid #b8ac92; border-radius:4px 0 0 0; }
+    .tabs.tabsExpanded > .tab:first-child:not(.tabActive) { border-top-left-radius:0; }
+    .tabs.tabsExpanded > .tab:not(.tabActive) { border-left:1px solid #b8ac92; box-shadow:2px 2px 3px rgba(82, 71, 49, .4); display:inline-block; position:absolute; max-width:300px; width:85%; }
+    .tabs.tabsExpanded > .tab.tabLast { border-radius:0 0 4px 0; border-bottom:1px solid #b8ac92; }
+}
+/****************************************
+	Tabs in a container
+*****************************************/
+.tabsCon:not(.tabsExpanded) .tab:not(:hover),
+.tabsCon .tabExpand { background:#f8f8f3; }
+.tabsCon .tab { background:#f8f8f3 0/; }
+.tabs.tabsCon .tab.tabActive { background:#fff; }
+.tabsCon .tab:not(.tabActive) { left:0; }
+.con .tabsCon + .conBody { border-top-left-radius:0; }
+/****************************************
+	Right aligned tabs
+*****************************************/
+.tabsCon.tabsRight { float:right; }
+.con .tabsRight + .conBody { border-radius:4px 0 4px 4px; clear:both; }
+@media only screen and (max-width:767px) {
+    .tabs480.tabsCon.tabsRight .tab:not(.tabActive) { left:auto; min-width:100%; width:250px; right:0; }
+}
+@media only screen and (max-width:479px) {
+    .tabs320.tabsCon.tabsRight .tab:not(.tabActive) { left:auto; min-width:100%; width:250px; right:0; }
+}
+/****************************************
+	Secondary Tabs
+*****************************************/
+.tabs2 { border-bottom:1px solid #d0c4a9; position:relative; }
+.tabs2 > .tab { background:none; color:#445708; padding:13px 16px; }
+.tabs2 > .tab:hover,
+.tabs2 > .tab:active { color:#789200; }
+.tabs2 > .tab.tabActive { color:#445708; font-weight:bold; position:relative; }
+/* Active Arrow */
+.tab2Arrow { bottom:0; display:none; left:31px; position:absolute; }
+.tab2Arrow::after,
+.tab2Arrow::before,
+.tabs2 > .tabActive::after,
+.tabs2 > .tabActive::before { border:12px solid transparent; border-bottom-width:0; content:''; display:block; font-size:0; height:0; left:50%; margin-left:-12px; line-height:0; position:absolute; width:0; }
+/* Need color as well as border-top-color to fix some odd Chrome painting issues */
+/* where it sometimes uses the color rather than the border-top-color */
+.tab2Arrow::before,
+.tabs2 > .tabActive::before { border-top-color:#bcb093; bottom:-13px; color:#bcb093; }
+.tab2Arrow::after,
+.tabs2 > .tabActive::after { border-top-color:#f8f8f3; bottom:-12px; color:#f8f8f3; }
+.tabSelect { color:#555; display:none; font-size:16px; height:28px; margin:8px; padding-top:3px; }
+@media only screen and (max-width:767px) {
+    .tabs2 { margin-bottom:8px; }
+    .tabs480.tabs2 > .tab:not(:only-child) { display:none; }
+    .tabs480 .tab2Arrow,
+    .tabs480 .tabSelect { display:inline-block; }
+}
+@media only screen and (max-width:479px) {
+    .tabs320.tabs2 > .tab:not(:only-child) { display:none; }
+    .tabs320 .tab2Arrow,
+    .tabs320 .tabSelect { display:inline-block; }
+}
+/****************************************
+	Secondary Tabs in Containers
+*****************************************/
+.conBody .tabs2 { background:#fff; border-top-right-radius:4px; margin:-16px -16px 16px -16px; }
+.conBody .tab2Arrow::after,
+.conBody .tabs2 > .tabActive:after { border-top-color:#fff; color:#fff; }
+@media only screen and (max-width:767px) {
+    .conBody .tabs2 { margin:-8px -8px 16px -8px; }
+}
+/****************************************
+	Singular Tab (Variable amount of tabs)
+*****************************************/
+/*tabs > .tab:only-child { border-top-right-radius:4px; }*/

@@ -1,0 +1,1032 @@
+html {
+    /*background: #f0f1e8 url(assets/bg.png) !important;*/
+}
+
+/*body { color:#3c3b36 !important;background:url(assets/firmament.jpg) no-repeat center top !important; }*/
+body {
+    text-align: center; /* Align text center and then in wrapper re-align left.  This is to help support old version of I.E */
+}
+
+.button {
+    margin-top: 36px;
+    font-size: 13px;
+    padding: 5px 20px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -o-border-radius: 2px;
+    border-radius: 2px;
+}
+
+.button:hover {
+    color: #fff;
+    text-decoration: none !important;
+    cursor: pointer;
+}
+
+#site-nav ul, #page-footer ul {
+    list-style: none;
+    position: relative;
+    top: 3px;
+}
+
+
+
+.wide {
+    width: 100% !important;
+}
+
+/*#site-nav {*/
+/*position: relative;*/
+/*z-index: 2;*/
+/*}*/
+#main-nav{
+    margin:0;padding:0; font-size:100%;
+}
+#main-nav a {
+    color: #3c3b36;
+    text-decoration: none;
+}
+
+#site-nav a:hover, #site-nav a:focus {
+    color: #000;
+}
+
+#site-nav a, #site-nav a:hover, #site-nav#site-nav a:focus {
+    -moz-transition: color .1s linear, border-color .1s linear;
+    -webkit-transition: color .1s linear, border-color .1s linear;
+    -o-transition: color .1s linear, border-color .1s linear;
+    -ms-transition: color .1s linear, border-color .1s linear;
+    transition: color .1s linear, border-color .2s linear;
+}
+
+#primary-nav ul {
+    float: left;
+    margin-left: 0;
+    margin-bottom: 20px;
+
+}
+
+#primary-nav li {
+    float: left;
+    margin-right: 25px;
+}
+
+/*#primary-nav a {*/
+/*font: 15px Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;*/
+/*display: block;*/
+/*border-bottom: 1px solid transparent;*/
+/*height: 32px; *//* matching header and body baselines for Palatino Linotype. */
+/*padding-top: 34px; *//* Baseline Shift for Palatino Linotype */
+/*}*/
+
+/*@media screen and (-webkit-min-device-pixel-ratio:0) {*/
+/*#primary-nav a {*/
+/*height: 28px; *//* matching header and body baselines for Palatino on Mac. Negatively effects nav baseline on Safari/Chrome on PC */
+/*padding-top: 38px; *//* Baseline Shift for Palatino on Mac */
+/*}*/
+/*}*/
+
+/*#primary-nav a#brand {*/
+/*text-indent: -9999px;*/
+/*width: 118px;*/
+/*border: none !important;*/
+/*background: url(assets/familysearch_logo.png) left 15px no-repeat;*/
+/*}*/
+
+/*#primary-nav a#brand:hover, #primary-nav a#brand:focus {*/
+/*background-position: right 15px;*/
+/*}*/
+
+/*#site-nav #secondary-nav ul {*/
+/*text-align: right;*/
+/*position: absolute;*/
+/*top: 3px;*/
+/*right: 0;*/
+/*margin-right: 0;*/
+/*}*/
+
+/*#site-nav #secondary-nav li {*/
+/*font-size: 11px;*/
+/*display: inline;*/
+/*margin-right: 15px;*/
+/*}*/
+
+.divPopUp{
+    background: #fff;
+    border: 1px solid #d8d9cc;
+    text-align: left;
+    /*border-top-color: #e6e7d9;*/
+    /*padding: 20px 20px 360px;*/
+    clear: both;
+    position: relative;
+    /*z-index: 1;*/
+}
+
+#content {
+    background: #fff;
+    border: 1px solid #d8d9cc;
+    border-top-color: #e6e7d9;
+    padding: 20px 20px 360px;
+    clear: both;
+    position: relative;
+    z-index: 1;
+}
+
+.www #content {
+    padding-right: 0 !important;
+}
+
+.give-back-page img, .library-page img, .learn-page img {
+    border: 3px solid #fff;
+    margin-bottom: 18px;
+}
+
+/* Layout */
+#content .third {
+    float: left;
+    width: 30%;
+    margin-left: 3.5%;
+}
+
+#content .third:first-child {
+    margin-left: 0;
+}
+
+#content .half {
+    float: left;
+    width: 47%;
+}
+
+#content .half:first-child {
+    margin-right: 6%;
+}
+
+#content .two-thirds {
+    float: left;
+    width: 66%;
+    margin-right: 3%;
+}
+
+#content .three-20s {
+    padding-top: 60px;
+    padding-right: 60px;
+    padding-left: 60px;
+}
+
+#content .four-40s {
+    margin-top: 40px;
+    margin-right: 40px;
+    margin-left: 40px;
+}
+
+/* Hook Module */
+/*.hook { margin:-40px;margin-bottom:60px;padding:60px 360px 60px 60px;color:#fff; }*/
+.hook {
+    height: 428px;
+    margin: -60px;
+    margin-bottom: 43px;
+    color: #fff;
+    position: relative;
+}
+
+.hook div {
+    width: 480px;
+    padding: 19px 40px 40px;
+    position: absolute;
+    top: 60px;
+    left: 60px;
+}
+
+#content .hook h1, #content .hook h2 {
+    color: #fff;
+}
+
+#content .hook h2 {
+    color: rgba(255, 255, 255, .5);
+}
+
+#content .hook form {
+    position: relative;
+}
+
+#content .hook form p:first-child {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.hook form input[type="search"] {
+    font: 13px "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "Bitstream Vera Sans", Verdana, sans-serif;
+    padding: 5px;
+    margin-right: 10px;
+    border: none;
+}
+
+.hook form .button {
+    margin-top: 0;
+}
+
+/* Hook Page Specific Color */
+#page1 .hook div {
+    background: #467276;
+    background: rgba(70, 114, 118, .95);
+}
+
+#page2 .hook div {
+    background: #634169;
+    background: rgba(99, 65, 105, .95);
+}
+
+#page3 .hook div {
+    background: #4b76b0;
+    background: rgba(75, 118, 176, .95);
+}
+
+#page4 .hook div {
+    background: #546f4b;
+    background: rgba(84, 111, 75, .95);
+}
+
+#page5 .hook div {
+    background: #467276;
+    background: rgba(70, 114, 118, .95);
+}
+
+#page1 .hook h2 {
+    color: #bedde0;
+}
+
+#page2 .hook h2 {
+    color: #c7b5c9;
+}
+
+#page3 .hook h2 {
+    color: #b7cee8;
+}
+
+#page4 .hook h2 {
+    color: #9db88f;
+}
+
+#page5 .hook h2 {
+    color: #bedde0;
+}
+
+#page1 .button {
+    background: #467276;
+}
+
+#page2 .button {
+    background: #634169;
+}
+
+#page3 .button {
+    background: #4b76b0;
+}
+
+#page4 .button {
+    background: #546f4b;
+}
+
+#page5 .button {
+    background: #467276;
+}
+
+#page1 .button:hover, #page1 .hook .button {
+    background: #2d4a4d;
+}
+
+#page2 .button:hover, #page2 .hook .button {
+    background: #432647;
+}
+
+#page3 .button:hover, #page3 .hook .button {
+    background: #314e73;
+}
+
+#page4 .button:hover, #page4 .hook .button {
+    background: #2f4a26;
+}
+
+#page5 .button:hover, #page5 .hook .button {
+    background: #2d4a4d;
+}
+
+#page1 .hook .button:hover {
+    background: #1e3133;
+}
+
+#page2 .hook .button:hover {
+    background: #2b192e;
+}
+
+#page3 .hook .button:hover {
+    background: #21344d;
+}
+
+#page4 .hook .button:hover {
+    background: #21341b;
+}
+
+#page5 .hook .button:hover {
+    background: #1e3133;
+}
+
+/* Page Specific Color */
+#page1 hgroup .h6 {
+    color: #82aeb1;
+}
+
+#page2 hgroup .h6 {
+    color: #96749a;
+}
+
+#page3 hgroup .h6 {
+    color: #97b7db;
+}
+
+#page4 hgroup .h6 {
+    color: #9db88f;
+}
+
+#page5 hgroup .h6 {
+    color: #82aeb1;
+}
+
+#page1 #content img {
+    border-color: #e4eded;
+}
+
+#page2 #content img {
+    border-color: #ebe6eb;
+}
+
+#page3 #content img {
+    border-color: #d6e5f6;
+}
+
+#page4 #content img {
+    border-color: #cedbc7;
+}
+
+#page5 #content img {
+    border-color: #e4eded;
+}
+
+/* Call-link Component */
+.call-link {
+    display: block;
+    margin-top: 18px;
+}
+
+.call-link a {
+    background: url(assets/call-link-arrow.png) no-repeat 100% 60%;
+    padding-right: 13px;
+}
+
+/* Call-link Enhancements */
+.hook .call-link a {
+    color: #d6e5f6;
+    background-image: url(assets/call-link-arrow-light.png);
+}
+
+/* Teaser module */
+.teaser {
+    padding: 50px 0 50px;
+    border-top: 1px solid #ebebeb;
+    clear: both;
+}
+
+.teaser:first-child {
+    padding-top: 0;
+    border: none;
+}
+
+.teaser hgroup .h2 {
+    margin-bottom: -18px;
+}
+
+.teaser.odd img {
+    float: right;
+}
+
+.teaser.even img {
+    float: left;
+    margin-top: 2px;
+}
+
+.teaser.even .teaser-content {
+    float: right;
+}
+
+.teaser-content {
+    width: 66%;
+}
+
+.teaser aside {
+    padding-top: 36px;
+}
+
+.teaser ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.teaser aside li {
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+}
+
+.teaser aside li a:after {
+    content: "...";
+    display: block;
+    padding: 0 5px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #fff;
+}
+
+/* PAGE FOOTER */
+/*#page-footer { color:#fff;padding-bottom:72px;background:#053a3e url(assets/earth.jpg) no-repeat 50% 0;position:relative;overflow:visible; }*/
+#page-footer {
+    color: #fff;
+    padding-bottom: 72px;
+}
+
+#page-footer-nav {
+    width: 982px;
+    padding-top: 54px;
+    margin: 0 auto;
+    background: #053a3e;
+}
+
+#page-footer #page-footer-nav div {
+    margin-bottom: 54px;
+    float: left;
+    border-right: 1px solid #36595c;
+}
+
+#page-footer-nav h1 {
+    position: static;
+}
+
+#page-footer-nav ul {
+    padding-left: 0px;
+    margin-right: 0;
+    width: 50%;
+    float: left;
+}
+
+#page-footer-nav li {
+    font-size: 11px;
+    line-height: 18px;
+}
+
+#page-footer #page-footer-nav .h6 {
+    font-size: 11px;
+    color: #9ec6c8;
+    text-transform: uppercase;
+}
+
+#page-footer-nav a {
+    color: #fff;
+    text-decoration: none;
+    -moz-transition: color .1s linear;
+    -webkit-transition: color .1s linear;
+    -o-transition: color .1s linear;
+    -ms-transition: color .1s linear;
+    transition: color .1s linear;
+}
+
+#page-footer-nav a:hover, #page-footer-nav a:focus {
+    color: #9ec6c8;
+}
+
+#page-footer-nav a:visited {
+    color: #ccc;
+}
+
+#page-footer-nav p {
+    font-size: 11px;
+    clear: left;
+    margin-bottom: 10px;
+    margin-left: 5px;
+}
+
+#page-footer-nav p span {
+    color: #9ec6c8;
+}
+
+#page-footer #page-footer-general ul {
+    width: 33%;
+}
+
+#page-footer-learn {
+    width: 265px;
+    padding-right: 15px;
+    margin-right: 65px;
+}
+
+#page-footer-general {
+    width: 295px;
+    margin-right: 65px;
+}
+
+#page-footer div#page-footer-resources {
+    width: 230px;
+    border: none;
+}
+
+/* FOOTER DECOR */
+#page-footer-decor {
+    width: 980px;
+    height: 0;
+    margin: 0 auto;
+    position: relative;
+}
+
+#page-footer #page-footer-decor {
+    margin: -54px 0 0 -22px !important;
+}
+
+#page-footer #page-footer-decor div {
+    border: none;
+}
+
+.decor {
+    width: 100%;
+    position: absolute;
+}
+
+/*.decor.i { width:65px;height:63px;z-index:10;top:-88px;right:312px;background:url(assets/family.png) no-repeat 0 0; } *//* Family */
+/*.decor.ii { width:150px;height:159px;z-index:10;top:-216px;right:142px;background:url(assets/tree.png) no-repeat 0 0; } *//* Tree */
+.decor.i {
+    width: 65px;
+    height: 63px;
+    z-index: 10;
+    top: -88px;
+    right: 312px
+}
+
+.decor.ii {
+    width: 150px;
+    height: 159px;
+    z-index: 10;
+    top: -216px;
+    right: 142px
+}
+
+.decor.iv {
+    height: 87px;
+    top: -87px;
+    z-index: 9;
+    background: url(assets/hill-top.png) no-repeat 50% 0;
+}
+
+/* Hill */
+.decor.v {
+    height: 17px;
+    top: -17px;
+    z-index: 8;
+    background: url(assets/ground.png) repeat-x 50% 0;
+}
+
+/* Ground Repeat */
+.decor.vi {
+    height: 204px;
+    top: -204px;
+    z-index: 7;
+    background: url(assets/first.png) repeat-x 45% 0;
+}
+
+/* Pines */
+.decor.vii {
+    height: 214px;
+    top: -214px;
+    z-index: 6;
+    background: url(assets/fade.png) no-repeat 50% 0;
+}
+
+/* Fade */
+.decor.viii {
+    height: 209px;
+    top: -209px;
+    z-index: 5;
+    background: url(assets/second.png) repeat-x 35% 0;
+}
+
+/* Second Valley */
+.decor.ix {
+    height: 214px;
+    top: -214px;
+    z-index: 4;
+    background: url(assets/third.png) repeat-x 27% 0;
+}
+
+/* Third (Lake) Valley */
+.decor.x {
+    height: 159px;
+    top: -159px;
+    z-index: 3;
+    background: url(assets/fourth.png) repeat-x 15% 0;
+}
+
+/* Fourth Valley */
+.decor.xi {
+    height: 477px;
+    top: -500px;
+    background: url(assets/clouds.png) no-repeat center top;
+}
+
+/* Clouds */
+
+/* Theme Artwork Variations */
+
+/* Ubiquitous Nav Hover & Current Page Highlight */
+#primary-nav .page2-link a:hover, #page2 .page2-link a {
+    color: #000;
+    border-color: #634169;
+    background: url(assets/page-hilite.png) no-repeat -200px bottom;
+}
+
+#primary-nav .page3-link a:hover, #page3 .page3-link a {
+    color: #000;
+    border-color: #4b76b0;
+    background: url(assets/page-hilite.png) no-repeat -400px bottom;
+}
+
+#primary-nav .page4-link a:hover, #page4 .page4-link a {
+    color: #000;
+    border-color: #546f4b;
+    background: url(assets/page-hilite.png) no-repeat -600px bottom;
+}
+
+#primary-nav .page5-link a:hover, #page5 .page5-link a {
+    color: #000;
+    border-color: #467276;
+    background: url(assets/page-hilite.png) no-repeat 0 bottom;
+}
+
+#page1.home a#brand, #page2 .page2-link a, #page3 .page3-link a, #page4 .page4-link a, #page5 .page5-link a {
+    cursor: default;
+}
+
+#page1.home a#brand {
+    background-position: right 15px;
+}
+
+/* Header Colors */
+#page1 h1, #page1 h2, #page1 h3, #page1 h4, #page1 h5, #page1 h6 {
+    color: #467276;
+}
+
+#page2 h1, #page2 h2, #page2 h3, #page2 h4, #page2 h5, #page2 h6 {
+    color: #634169;
+}
+
+#page3 h1, #page3 h2, #page3 h3, #page3 h4, #page3 h5, #page3 h6 {
+    color: #7897ba;
+}
+
+#page4 h1, #page4 h2, #page4 h3, #page4 h4, #page4 h5, #page4 h6 {
+    color: #6c8963;
+}
+
+#page5 h1, #page5 h2, #page5 h3, #page5 h4, #page5 h5, #page5 h6 {
+    color: #467276;
+}
+
+/* Current Page Selection */
+#page1 ::selection {
+    background: #bedde0;
+}
+
+#page2 ::selection {
+    background: #e4d8e5;
+}
+
+#page3 ::selection {
+    background: #d6e5f6;
+}
+
+#page4 ::selection {
+    background: #cedbc7;
+}
+
+#page5 ::selection {
+    background: #bedde0;
+}
+
+/* Jump Link Target Colors */
+*:target {
+    -webkit-transition: background .5s linear;
+    -moz-transition: background .5s linear;
+    -ms-transition: background .5s linear;
+    -o-transition: background .5s linear;
+    transition: background .5s linear;
+}
+
+#page1 *:target {
+    background: #f0f7f7;
+}
+
+#page2 *:target {
+    background: #f6f0f7;
+}
+
+#page3 *:target {
+    background: #f0f3f7;
+}
+
+#page4 *:target {
+    background: #f2f7f0;
+}
+
+#page5 *:target {
+    background: #f0f7f7;
+}
+
+/* Exceptions */
+#content.has-toolbar {
+    padding-top: 0;
+}
+
+#content.panel-full {
+    padding-top: 0;
+    padding-right: 0;
+}
+
+.image-viewer-page #header, .image-viewer-page #content {
+    padding: 0;
+    width: 100%;
+    border-left: none;
+    border-right: none;
+}
+
+/* Overrides */
+#content .button {
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#page-footer div {
+    float: none;
+}
+
+#page-footer .call-link {
+    display: inline;
+}
+
+#page-footer .call-link a {
+    color: #9ec6c8;
+    background-image: url(assets/call-link-arrow-footer.png);
+}
+
+#page-footer .call-link a:hover {
+    color: #fff;
+}
+
+#page-footer .h6 {
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "Bitstream Vera Sans", Verdana, Helvetica, Arial, sans-serif;
+}
+
+/* Page Specific Enhancements */
+.featured-library {
+    clear: both;
+    padding: 25px 20px;
+    background: #d6e5f6;
+    margin-top: 54px;
+}
+
+#content .featured-library img, .featured-library .teaser {
+    border: none;
+    padding: 0;
+}
+
+.featured-library .teaser-content {
+    width: 48%;
+}
+
+.featured-library .h2 {
+    margin-bottom: 18px;
+}
+
+.featured-library .h6 {
+    line-height: 18px;
+    margin-top: 23px;
+}
+
+.learn-page .hook {
+    background: url(assets/hook-learn-map.jpg) no-repeat;
+}
+
+.learn-page .teaser-content p {
+    width: 85%;
+    margin-bottom: 36px;
+}
+
+.learn-page .hook p {
+    margin-bottom: 0px;
+}
+
+.learn-page .hook form p {
+    margin-top: 70px;
+}
+
+.learn-page .hook form input[type="search"] {
+    width: 350px;
+}
+
+.library-page .hook {
+    background: url(assets/hook-familysearch-centers.jpg) no-repeat;
+}
+
+.library-page .hook form p {
+    margin-top: 43px;
+}
+
+.library-page .hook form input[type="search"] {
+    width: 200px;
+}
+
+.library-page .call-link-special {
+    position: absolute;
+    right: 0;
+    bottom: -15px;
+}
+
+.give-back-page .hook {
+    background: url(assets/hook-give-back-tree-field.jpg) no-repeat;
+}
+
+.give-back-page .hook .jump-links p {
+    float: left;
+    margin-left: 60px;
+    margin-bottom: 0;
+}
+
+.give-back-page .hook .jump-links p:first-child {
+    margin-left: 0;
+}
+
+.give-back-page .hook .jump-links a {
+    color: #ccdec3;
+}
+
+.give-back-page *:target {
+    margin-left: -60px;
+    margin-right: -60px;
+    padding-left: 60px !important;
+    padding-right: 60px !important;
+    border-color: #fff;
+}
+
+.give-back-page *:target+article {
+    border-color: #fff;
+}
+
+/*  baseline stuff  */
+.hook h1 {
+    margin-bottom: -22px;
+}
+
+.hook div h2.h3 {
+    padding: 0;
+    margin-bottom: 9px;
+}
+
+.teaser hgroup {
+    margin-top: -11px;
+    margin-bottom: 5px;
+}
+
+.teaser img {
+    margin-top: 12px;
+    margin-bottom: 9px;
+}
+
+.learn-page .h2 {
+    padding: 0;
+    margin-bottom: 6px;
+}
+
+.learn-page .h6 {
+    padding: 0;
+    margin-bottom: 19px;
+}
+
+.learn-page .teaser-content {
+    padding-top: 3px;
+}
+
+.learn-page aside ul .h6 {
+    margin-bottom: 5px;
+}
+
+.library-page .h2 {
+    padding: 0;
+    margin-bottom: 6px;
+}
+
+.library-page .h6 {
+    padding: 0;
+    margin-bottom: 19px;
+}
+
+/* Form Elements */
+.field {
+    position: relative;
+    line-height: 1.2em;
+    width: 95%;
+    margin-left: 15px;
+    margin-bottom: 10px;
+    float: left;
+}
+
+.data75 {
+    width: 70%;
+    float: left;
+    padding-left: 10px;
+}
+
+.inputBox {
+    width: 50%;
+    height: 20px;
+    border: 1px solid #003366;
+    padding-left: 3px;
+}
+
+.textArea {
+    width: 100%;
+    border: 1px solid #003366;
+    padding-left: 3px;
+    overflow: auto;
+}
+
+.selectBox {
+    width: 40%;
+    height: 30px;
+    border: 1px solid #003366;
+    margin-top: 3px;
+}
+
+.requiredMark {
+    color: red;
+    font-family: arial, sans-serif;
+    font-size: 8pt;
+    display: inline;
+    padding: 3px;
+}
+
+.check{
+    display: inline;
+    padding: 3px;
+}
+.checkInvalid{
+    color: red;
+    font-family: arial, sans-serif;
+    font-size: 8pt;
+    display: inline;
+    padding: 3px;
+}
+.labelTitle{
+    width:27%;
+    float:left;
+    text-align:left;
+    overflow:hidden;
+    font-weight: bold;
+    padding-top:4px
+}
+.label{
+    float:left;
+    text-align:left;
+    overflow:hidden;
+    font-weight: bold;
+    padding-top:4px
+}
+.detailRow{
+    border: 1px
+}
+
+
+.requiredNote {
+    font-size: 90%;
+    padding-right: 3px;
+    float: right;
+}
+
+#errors {
+    margin-left: 10px;
+}
+
+/* Custom for Test Managment System */
+.linkActive {
+    color: #000;
+    border-color: #4b76b0;
+    background: url(assets/page-hilite.png) no-repeat -400px bottom;
+}
+
+

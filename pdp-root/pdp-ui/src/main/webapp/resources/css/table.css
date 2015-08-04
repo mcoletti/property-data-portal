@@ -1,0 +1,126 @@
+@charset "utf-8";
+.table {
+    width: 100%
+}
+
+.table th {
+    font-weight: bold;
+    text-align: left
+}
+
+.table thead th {
+    border-bottom: 2px solid #c9c5b9
+}
+
+.table td, .table th {
+    padding: 3px 8px;
+    vertical-align: top
+}
+
+.table tfoot td {
+    border-top: 2px solid #c9c5b9
+}
+
+.table tbody tr {
+    background-color: #fff
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: #f5f5f5
+}
+
+@media all and (max-width:767px) {
+    .table480, .table480 tbody, .table480 tr, .table480 td {
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        display: block;
+        width: 100%
+    }
+
+    .table480 tr {
+        border: 1px solid #ddd;
+        margin-top: 8px
+    }
+
+    .table480 tr:first-child {
+        margin-top: 0
+    }
+
+    .table480 tr::before, .table480 tr::after {
+        content: '';
+        display: table
+    }
+
+    .table480 tr::after {
+        clear: both
+    }
+
+    .table480 thead, .table480 tfoot {
+        display: none
+    }
+
+    .table480 td {
+        float: left;
+        padding-left: 120px;
+        text-indent: -116px;
+        vertical-align: middle
+    }
+
+    .table480 td::before {
+        content: attr(data-label) ":";
+        display: inline-block;
+        font-weight: bold;
+        padding-right: 10px;
+        text-indent: 0;
+        width: 106px
+    }
+}
+
+@media all and (max-width:479px) {
+    .table320, .table320 tbody, .table320 tr, .table320 td {
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        display: block;
+        width: 100%
+    }
+
+    .table320 tr {
+        border: 1px solid #ddd;
+        margin-top: 8px
+    }
+
+    .table320 tr:first-child {
+        margin-top: 0
+    }
+
+    .table320 tr::before, .table320 tr::after {
+        content: '';
+        display: table
+    }
+
+    .table320 tr::after {
+        clear: both
+    }
+
+    .table320 thead, .table320 tfoot {
+        display: none
+    }
+
+    .table320 td {
+        float: left;
+        padding-left: 120px;
+        text-indent: -116px;
+        vertical-align: middle
+    }
+
+    .table320 td::before {
+        content: attr(data-label) ":";
+        display: inline-block;
+        font-weight: bold;
+        padding-right: 10px;
+        text-indent: 0;
+        width: 106px
+    }
+}

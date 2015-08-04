@@ -1,0 +1,1859 @@
+
+@charset "UTF-8";
+#HeaderRegion {
+    position: relative;
+    z-index: 101;
+}
+.headWrp {
+    margin: 0 auto;
+    position: relative;
+    width: 990px;
+    z-index: 2;
+}
+.headWrp a, .headWrp a:hover, .headWrp a:active, .headWrp a:focus {
+    color: #445708;
+}
+.headWrp a.ancBtn, .headWrp a.ancBtn:hover, .headWrp a.ancBtn:active, .headWrp a.ancBtn:focus {
+    color: #FFFFFF;
+}
+.headWrp a.ancBtn.silver, .headWrp a.ancBtn.silver:hover, .headWrp a.ancBtn.silver:active, .headWrp a.ancBtn.silver:focus {
+    color: #445708;
+}
+.headWrp .topSec {
+    height: 45px;
+    position: relative;
+    width: 100%;
+    z-index: 2;
+}
+.headWrp .localLogo {
+    float: left;
+    height: 45px;
+}
+.headWrp .localLogo a {
+    display: block;
+    float: left;
+    margin-left: 10px;
+    margin-top: 9px;
+}
+#HeaderRegion .headWrp #Hdr_LogoWrp > a > img {
+    max-height: 28px;
+}
+.headWrp .localLogo .localLeaf {
+    background: url("http://c.mfcreative.com/webparts/header/i/leaves.png") no-repeat scroll right top / 86px 37px transparent;
+    display: inline-block;
+    height: 37px;
+    width: 92px;
+}
+.headWrp .userControls {
+    float: right;
+    margin-right: 10px;
+    margin-top: 12px;
+}
+.headWrp .userControls > li {
+    float: left;
+    height: 22px;
+    margin-left: 20px;
+}
+.headWrp .userControls a.ancBtn {
+    margin-top: -1px;
+}
+.headWrp .userControls a.ancBtn:hover {
+    text-decoration: none;
+}
+.headWrp .userControls .profileImg {
+    border: 1px solid #DBD5C9;
+    display: inline-block;
+    height: 22px;
+    margin-top: -2px;
+    vertical-align: middle;
+    width: 17px;
+}
+.headWrp .userControls .acctNote {
+    margin-left: 12px;
+    position: relative;
+}
+.headWrp .userControls .acctNote:first-child {
+    margin-left: 0;
+}
+.headWrp .userControls .acctNote > a {
+    display: block;
+    padding: 6px 4px;
+    position: relative;
+    text-decoration: none;
+    top: -1px;
+}
+.headWrp .userControls .acctNote > a:hover {
+    background-color: #E0DDD0;
+    border-radius: 3px 3px 3px 3px;
+}
+.headWrp .userControls .acctNote > a:focus, .headWrp .userControls .acctNote > a:active {
+    background-color: #E0DDD0;
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 0 2px 1px 1px rgba(0, 0, 0, 0.17) inset;
+}
+.headWrp .userControls .acctNote .accountMessages {
+    height: 13px;
+    padding: 5.5px;
+    width: 16px;
+}
+.headWrp .userControls .acctNote .accountHints {
+    height: 18px;
+    padding: 3px 4px;
+    width: 17px;
+}
+.headWrp .userControls .noteImg {
+    display: block;
+    z-index: 1;
+}
+.headWrp .userControls .noteNum {
+    background-color: red;
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 0 1px rgba(0, 0, 0, 0.77);
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: 700;
+    left: -4px;
+    line-height: 14px;
+    padding: 0 2px 1px;
+    position: absolute;
+    text-decoration: none;
+    top: -7px;
+    z-index: 2;
+}
+.headWrp .userControls .accountHints .noteImg {
+    background-image: url("/webparts/header/i/hints/hint16.png");
+    background-repeat: no-repeat;
+    background-size: 18px 18px;
+    height: 18px;
+    width: 18px;
+}
+.headWrp .userControls .accountHints .noteImg.hidden {
+    background-image: none;
+}
+.headWrp #Hdr_Hints_ShakyLeaf {
+    display: none;
+    height: 21px;
+    left: -1px;
+    position: relative;
+    text-decoration: none;
+    top: -3px;
+    width: 21px;
+}
+.headWrp #Hdr_Messages_Icon {
+    height: 13px;
+    position: relative;
+    width: 16px;
+}
+.headWrp .userControls .accountMessages .noteImg {
+    background-image: url("/webparts/header/i/messages/message16.png");
+    background-repeat: no-repeat;
+    background-size: 16px 12px;
+    height: 12px;
+    width: 16px;
+}
+.headWrp .userControls .acctNoteContent {
+    background-color: #FFFFFF;
+    border: 1px solid #B9AD8F;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3);
+    display: none;
+    left: -298px;
+    padding: 6px 0 0;
+    position: absolute;
+    top: 28px;
+    width: 338px;
+}
+.headWrp .userControls .acctNoteContent h4 {
+    border-bottom: 1px solid #DBD7CB;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 18px;
+    padding: 0 15px 5px;
+}
+.headWrp .userControls .loadingNote {
+    display: block;
+    margin: 30px auto;
+}
+.headWrp .userControls .noNotes {
+    padding: 4px 15px 20px;
+}
+.headWrp .userControls .noNotes h5 {
+    font-size: 14px;
+    font-weight: 700;
+    padding: 22px 0 5px;
+    text-align: center;
+}
+.headWrp .userControls .noNotes p {
+    padding-top: 12px;
+    text-align: center;
+}
+.headWrp .userControls .noNotes .noTreeText {
+    font-size: 13px;
+    text-align: left;
+}
+.headWrp .userControls .noNotes .noTreeImg {
+    background-image: url("/webparts/header/i/hints/notree.jpg");
+    height: 62px;
+    margin-left: -15px;
+    width: 338px;
+}
+.headWrp .userControls .acctNoteContent div#Header_HintsRegion > a, .headWrp .userControls .acctNoteContent div#Header_MessagesRegion > a {
+    border-radius: 0 0 4px 4px;
+    display: block;
+    font-size: 13px;
+    font-weight: 700;
+    padding: 6px 0;
+    text-align: center;
+    text-decoration: none;
+}
+.headWrp .userControls .acctNoteContent div#Header_HintsRegion > a:hover, .headWrp .userControls .acctNoteContent div#Header_MessagesRegion > a:hover {
+    background-color: #E1E6AA;
+}
+.headWrp .userControls #Header_MessagesRegion > a {
+    border-top: 1px solid #DBD7CB;
+}
+.headWrp .userControls #moreMessages ul {
+    position: relative;
+}
+.headWrp .userControls .acctNoteContent .acctNoteList a {
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #D4D0C1;
+    display: block;
+    position: relative;
+    text-decoration: none;
+}
+.headWrp .userControls #moreMessages .acctNoteList a {
+    font-size: 13px;
+    height: 53px;
+    padding: 6px 10px 0 62px;
+}
+.headWrp .userControls #moreHints .acctNoteList a {
+    font-size: 13px;
+    line-height: 16px;
+    padding: 7px 15px;
+}
+.headWrp .userControls .acctNoteContent .acctNoteList li:hover a {
+    background-color: #E1E6AA;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1) inset;
+}
+.headWrp .userControls .acctNoteContent .acctNoteText {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.headWrp .userControls .acctNoteContent .unreadMessage a, .headWrp .userControls .acctNoteContent .unviewedHint a {
+    background-color: #F0F2D4;
+}
+.headWrp .userControls #moreMessages .acctMsgImg {
+    border: 1px solid #E2E2E2;
+    height: 43px;
+    left: 7px;
+    position: absolute;
+    top: 7px;
+    width: 43px;
+}
+.headWrp .userControls #moreMessages .acctMsgTitle {
+    color: #566C11;
+    font-weight: 700;
+}
+.headWrp .userControls #moreMessages .acctMsgContent {
+    color: #333333;
+    line-height: 18px;
+}
+.headWrp .userControls #moreHints .acctHintTitle {
+    color: #565656;
+}
+.headWrp .userControls #moreHints .acctHintContent {
+    font-weight: 700;
+}
+.headWrp .userControls #moreHints .acctHintContent i {
+    font-style: italic;
+    font-weight: 400;
+}
+.headWrp .userControls #moreMessages .acctMsgInfo {
+    color: #666666;
+    font-size: 11px;
+    line-height: 11px;
+}
+.headWrp .userControls #moreHints .acctHintOpened {
+    border-radius: 0 0 0 0;
+}
+.headWrp .userControls #moreHints .acctHintOpened .acctHintArrow, .headWrp .userControls #moreHints .acctHintClosed .acctHintArrow, .headWrp .userControls .ancBtn.silver .downArrow {
+    border: 4px solid transparent;
+    display: inline-block;
+    font-size: 0;
+    height: 0;
+    line-height: 0;
+    margin-right: 7px;
+    margin-top: -2px;
+    vertical-align: middle;
+    width: 0;
+}
+.headWrp .userControls .ancBtn.silver .downArrow {
+    margin: 0 0 2px 5px;
+}
+#HeaderRegion a.ancBtn.sml.silver > span {
+    background-position: 0 0;
+    float: none;
+}
+#HeaderRegion a.ancBtn.sml.silver {
+    display: inline-block;
+    padding: 0 6px;
+}
+.headWrp .userControls #moreHints .acctHintOpened .acctHintArrow {
+    border-bottom-color: #445708;
+    border-top-width: 0;
+}
+.headWrp .userControls #moreHints .acctHintClosed .acctHintArrow, .headWrp .userControls .ancBtn.silver .downArrow {
+    border-bottom-width: 0;
+    border-top-color: #445708;
+}
+.headWrp .userControls .acctHintsTreesList {
+    border-radius: 0 0 5px 5px;
+    display: none;
+    max-height: 100px;
+    overflow: auto;
+}
+.headWrp .userControls .acctHintsTreesList a {
+    background-color: #FFFFFF;
+    display: block;
+    padding: 2px 15px;
+    position: relative;
+    text-decoration: none;
+}
+.headWrp .userControls .acctHintsTreesList a:hover {
+    background-color: #E1E6AA;
+}
+.headWrp .userControls .acctDrop {
+    margin-left: 16px;
+    position: relative;
+}
+.headWrp .userControls #myAccountLink {
+    cursor: pointer;
+    text-decoration: none;
+    vertical-align: middle;
+}
+.headWrp .userControls .accountName {
+    color: #445708;
+    font-weight: 700;
+    margin: 0 5px;
+}
+.headWrp .userControls li:hover .acctHelp, .headWrp .userControls li .acctHelp:active, .headWrp .userControls li .acctHelp:focus, .headWrp .userControls .noNotes a:hover, .headWrp .userControls .noNotes a:active, .headWrp .userControls .noNotes a:focus, .headWrp .userControls .acctHintsPref p a:hover, .headWrp .userControls .acctHintsPref p a:active, .headWrp .userControls .acctHintsPref p a:focus {
+    color: #789201;
+}
+.headWrp .userControls .accountArrow {
+    display: inline-block;
+    height: 12px;
+    margin-top: -2px;
+    position: relative;
+    vertical-align: middle;
+    width: 12px;
+}
+.headWrp .userControls .accountArrow span {
+    -moz-border-bottom-colors: none;
+    -moz-border-end-style: dashed;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: #445708 transparent transparent;
+    border-image: none;
+    border-right: 4px solid transparent;
+    border-style: solid;
+    border-width: 4px 4px 0;
+    font-size: 0;
+    height: 0;
+    left: 2px;
+    line-height: 0;
+    position: absolute;
+    top: 4px;
+    width: 0;
+}
+.headWrp .userControls .acctDrop #moreAcct {
+    display: none;
+}
+.headWrp .userControls .acctDrop:hover #moreAcct, .headWrp .userControls .acctDrop:active #moreAcct, .headWrp .userControls .acctDrop:focus #moreAcct {
+    display: block;
+}
+.headWrp .userControls .acctBar {
+    border-top: 1px solid #CCCCCC;
+    height: 0;
+    margin: 5px 0;
+    padding: 0;
+}
+.headWrp .userControls .acctDrop:hover .accountArrow > span {
+    border-top-color: #789201;
+    cursor: pointer;
+}
+.headWrp .userControls .acctList {
+    background-color: #FFFFFF;
+    border: 1px solid #B9AD8F;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3);
+    display: block;
+    padding: 6px 0;
+    position: absolute;
+    right: -13px;
+    top: 21px;
+    z-index: 7;
+}
+.headWrp .userControls .acctList ul li a {
+    display: block;
+    font-weight: 700;
+    line-height: 21px;
+    padding: 0 10px;
+    text-decoration: none;
+    text-shadow: 0 1px rgba(255, 255, 255, 0.75);
+    white-space: nowrap;
+}
+.headWrp .userControls .acctList ul li a:hover {
+    background-color: #AFBC22;
+    color: #FFFFFF;
+    text-shadow: none;
+}
+.headWrp .userControls .acctHintsPref {
+    background-color: #E7EEF6;
+    border-bottom: 1px solid #D4D0C1;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) inset;
+    color: #334455;
+    padding: 7px 60px 7px 15px;
+    position: relative;
+}
+.headWrp .userControls .acctHintsPref > a {
+    color: #334455;
+    cursor: pointer;
+    font: 700 31px/18px Arial,Helvetica,sans-serif;
+    opacity: 0.5;
+    overflow: hidden;
+    position: absolute;
+    right: 10px;
+    top: 13px;
+}
+.headWrp .userControls .acctHintsPref > a:hover {
+    opacity: 1;
+}
+.headWrp .userControls .acctHelp {
+    font-weight: 700;
+    line-height: 20px;
+    text-decoration: none;
+}
+.headWrp .userControls .acctHelp, .headWrp .topSec .userControls li .profileLink {
+    text-decoration: none;
+    vertical-align: middle;
+}
+.headWrp .userControls .acctHelp:hover, .headWrp .topSec .userControls li .profileLink:hover span {
+    text-decoration: underline;
+}
+.headWrp .userControls .acctNoteArrow {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: transparent transparent #CFC2A7;
+    border-image: none;
+    border-right: 10px solid transparent;
+    border-style: solid;
+    border-width: 0 10px 10px;
+    font-size: 0;
+    height: 0;
+    line-height: 0;
+    position: absolute;
+    right: 17px;
+    top: -10px;
+    width: 0;
+}
+.headWrp .userControls .acctNoteInnerArrow {
+    -moz-border-bottom-colors: none;
+    -moz-border-end-style: dashed !important;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: transparent transparent #FFFFFF;
+    border-image: none;
+    border-right: 10px solid transparent;
+    border-style: solid;
+    border-width: 0 10px 10px;
+    font-size: 0;
+    height: 0;
+    line-height: 0;
+    position: absolute;
+    right: -10px;
+    top: 1px;
+    width: 0;
+}
+.headWrp.loggedIn .userControls .acctDrop .acctNoteArrow {
+    display: none;
+}
+.headWrp .mainNav {
+    background-color: #E7E5D8;
+    background-image: linear-gradient(#EDEBE0, #E2E0CF);
+    border: 1px solid #B3A485;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.17), 0 1px rgba(255, 255, 255, 0.6) inset, 1px 0 rgba(255, 255, 255, 0.3) inset, -1px 0 rgba(255, 255, 255, 0.3) inset;
+    height: 31px;
+    position: relative;
+}
+.headWrp .ieGrad {
+    height: 32px;
+    width: 100%;
+}
+.headWrp .mainNav .gLinks {
+    float: left;
+}
+.headWrp .mainNav .gLinks > li {
+    float: left;
+    font-weight: 700;
+    line-height: 30px;
+    position: relative;
+}
+.headWrp .mainNav .gLinks li a {
+    border-right: 1px solid #B3A485;
+    box-shadow: 0 1px rgba(255, 255, 255, 0.6) inset, 1px 0 rgba(255, 255, 255, 0.3) inset, -1px 0 rgba(255, 255, 255, 0.3) inset;
+    color: #445708;
+    display: block;
+    height: 31px;
+    padding: 0 11px;
+    text-decoration: none;
+    text-shadow: 0 1px rgba(255, 255, 255, 0.75);
+}
+.noTouch .mainNav .gLinks li:hover > a, .headWrp .mainNav .gLinks .isOpenMenu > a {
+    background-color: #FCFFF3;
+}
+.headWrp .mainNav .gLinks li > a:hover {
+    background-color: #E1E6AA;
+}
+.headWrp .mainNav .gLinks li .tabHome, .headWrp .mainNav .gLinks li .tabHome:focus, .headWrp .mainNav .gLinks li .tabHome.selected {
+    border-radius: 4px 0 0 4px;
+}
+.headWrp .mainNav .gLinks li > a:focus, .headWrp .mainNav .gLinks li > a:active {
+    background-color: #BDBCA2;
+    background-image: -moz-linear-gradient(center top , #CECDB7 24%, #BDBCA2);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1) inset;
+}
+.headWrp .mainNav .gLinks li > a.selected {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-image: -moz-linear-gradient(center top , #BAB5AB, #8D8372);
+    border-color: #84765A #84765A -moz-use-text-color;
+    border-image: none;
+    border-style: solid solid none;
+    border-width: 1px 1px 0;
+    box-shadow: 0 1px rgba(255, 255, 255, 0.31) inset;
+    color: #FFFFFF;
+    margin: -1px 0 0 -1px;
+    text-shadow: 0 -1px rgba(0, 0, 0, 0.24);
+}
+.headWrp .mainNav .gLinks li > a.selected:hover {
+}
+.headWrp .mainNav .gLinks li a span {
+    border-color: #43540D transparent -moz-use-text-color;
+    border-style: solid solid none;
+    border-width: 4px 4px 0;
+    display: inline-block;
+    font-size: 0;
+    line-height: 0;
+    margin: -2px 0 0 3px;
+    vertical-align: middle;
+}
+.headWrp .mainNav .gLinks li .selected span {
+    border-top-color: #FFFFFF;
+}
+.headWrp .mainNav .gLinks li a .noArrow {
+    display: none;
+}
+.headWrp .mainNav .secLinks .subNavGift {
+    position: relative;
+}
+.headWrp .mainNav .secLinks .subNavGift a {
+    padding-left: 30px;
+}
+.headWrp .mainNav .secLinks .subNavGift .giftImg {
+    display: inline-block;
+    height: 27px;
+    left: -2px;
+    position: absolute;
+    top: -3px;
+    width: 30px;
+}
+.headWrp .mainNav .secLinks .subNavGift .giftImgBlue {
+    background-image: url("/webparts/header/i/giftsub.png");
+}
+.headWrp .mainNav .secLinks .subNavGift .giftImgRed {
+    background-image: url("/webparts/header/i/giftsub_red.png");
+}
+.headWrp .mainNav .secLinks .subNavGift .giftImgVDay {
+    background-image: url("/webparts/header/i/giftsub-vday.png");
+}
+.headWrp .mainNav .secLinks {
+    float: left;
+    height: 31px;
+}
+.headWrp .mainNav .secLinks li {
+    float: left;
+    font-weight: 700;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+.headWrp .mainNav .secLinks li a {
+    border: 1px solid #C9C1A2;
+    border-radius: 4px 4px 4px 4px;
+    box-shadow: 0 1px rgba(255, 255, 255, 0.31), 0 1px rgba(255, 255, 255, 0.51) inset;
+    color: #43540D;
+    display: block;
+    line-height: 15px;
+    padding: 2px 7px;
+    text-decoration: none;
+    text-shadow: 0 1px rgba(255, 255, 255, 0.75);
+}
+.headWrp .mainNav .secLinks li a:hover {
+    background-color: #E1E6AA;
+    background-image: -moz-linear-gradient(center top , #E1E6AA 24%, #C5CB89);
+    border-color: #B3A485;
+    box-shadow: 0 1px rgba(0, 0, 0, 0.07), 0 1px rgba(255, 255, 255, 0.51) inset;
+}
+.headWrp .mainNav .secLinks li a:focus, .headWrp .mainNav .secLinks li a:active {
+    background-color: #C2C1A8;
+    background-image: -moz-linear-gradient(center top , #D0CFB7, #C2C1A8);
+    border-color: rgba(0, 0, 0, 0.21) #B9B9A3 #B9B9A3;
+    box-shadow: 0 1px rgba(255, 255, 255, 0.51), 0 1px rgba(0, 0, 0, 0.1) inset;
+}
+.headWrp .mainNav .secLinks li a.selected {
+    background-color: #A49C8F;
+    background-image: -moz-linear-gradient(center top , #BAB5AB, #8D8372);
+    border-color: #84765A;
+    box-shadow: 0 1px rgba(255, 255, 255, 0.31) inset;
+    color: #FFFFFF;
+    text-shadow: 0 -1px rgba(0, 0, 0, 0.24);
+}
+.headWrp .mainNav .ddList {
+    border-collapse: collapse;
+    left: 0;
+    width: 100%;
+}
+.headWrp .mainNav .ddList li {
+    background-color: #FCFFF3;
+    float: none;
+    line-height: 1.3;
+    padding: 0;
+}
+.headWrp .mainNav .ddList:first-child li {
+    border-top: 0 none;
+}
+.headWrp .mainNav .ddList li a {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: -moz-use-text-color -moz-use-text-color #B3A485;
+    border-image: none;
+    border-style: none none solid;
+    border-width: 0 0 1px;
+    box-shadow: none;
+    font-weight: 400;
+    height: auto;
+    padding: 7px 10px;
+    text-shadow: 0 1px rgba(255, 255, 255, 0.75);
+}
+.headWrp .mainNav .ddList li a:hover {
+    background-color: #AEBB23;
+    color: #FFFFFF;
+    text-shadow: none;
+}
+.headWrp .mainNav .ddList > li:last-child, .headWrp .mainNav .ddList .lastLi {
+    border-radius: 0 0 5px 5px;
+}
+.headWrp .mainNav .ddList > li:last-child a, .headWrp .mainNav .ddList .lastLi a {
+    border-bottom: 0 none;
+    border-radius: 0 0 5px 5px;
+}
+.headWrp .mainNav .listWrpr {
+    display: none;
+    height: 0;
+    left: -1px;
+    position: absolute;
+    width: 250px;
+    word-wrap: break-word;
+}
+.headWrp .mainNav .listWrpr .innerListWrpr {
+    border: 1px solid #B3A485;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3);
+    display: inline-block;
+    max-width: 250px;
+    min-width: 100px;
+    position: relative;
+}
+.noTouch .headWrp .mainNav .gLinks > li:hover > .listWrpr {
+    display: block;
+}
+.headWrp .mainNav .secLinks .censusDays {
+    padding-left: 40px;
+    position: relative;
+}
+.caltile {
+    background-clip: padding-box;
+    background-color: #FFFFFF;
+    border: 1px solid #B3B3B3;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0 0 1px #CCCCCC, 0 -1px 2px -2px #000000 inset;
+    color: #333333;
+    font-size: 16px;
+    font-weight: 700;
+    height: 17px;
+    left: 5px;
+    padding-top: 10px;
+    position: absolute;
+    text-align: center;
+    top: -5px;
+    width: 28px;
+}
+.caltile:before {
+    background-color: #CA563E;
+    background-image: -moz-linear-gradient(center top , #CA563E, #993F2E);
+    border-radius: 4px 4px 0 0;
+    box-shadow: 0 1px 1px #CCCCCC;
+    content: "";
+    display: block;
+    height: 8px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 28px;
+}
+.headWrp #passwordWatermark {
+    color: #999999;
+}
+.headWrp #password {
+    color: #333333;
+}
+#CobrandRegion {
+    position: relative;
+    z-index: 102;
+}
+.nbcWrp {
+    height: 54px;
+    margin: 0 auto -5px;
+    position: relative;
+    width: 1034px;
+}
+.nbcWrp {
+    z-index: 16;
+}
+#HeaderRegion .loginBox {
+    background-color: #FFFFFF;
+    border: 1px solid #B9AD8F;
+    border-radius: 6px 6px 6px 6px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3);
+    display: none;
+    max-width: 500px;
+    min-width: 200px;
+    padding: 15px;
+    position: absolute;
+    right: 0;
+    top: 30px;
+}
+#HeaderRegion #loginForm > table {
+    width: 100%;
+}
+#HeaderRegion .loginBox.on {
+    display: inline-block;
+}
+#HeaderRegion input.ancUser, #HeaderRegion input.ancPass {
+    box-shadow: 0 1px rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.2) inset;
+    color: #999999;
+    margin-top: 3px;
+    position: relative;
+    width: 100%;
+}
+#HeaderRegion input.ancUser:focus, #HeaderRegion input.ancPass:focus {
+    border-color: #566C11;
+    box-shadow: 0 1px rgba(0, 0, 0, 0.2) inset, 0 0 2px rgba(116, 135, 23, 0.75);
+    outline: 0 none;
+}
+#HeaderRegion .userSec {
+    margin-bottom: 12px;
+    padding-right: 10px;
+}
+#HeaderRegion .passSec {
+    margin-bottom: 15px;
+    padding-right: 10px;
+}
+#HeaderRegion .submitLogin {
+    margin-bottom: 7px;
+    white-space: nowrap;
+}
+#HeaderRegion .remMe {
+    height: 28px;
+    line-height: 28px;
+    margin-left: 22px;
+    vertical-align: middle;
+}
+#HeaderRegion .remMe label {
+    margin-left: 5px;
+    vertical-align: middle;
+}
+#HeaderRegion .forgotInfo {
+    margin-left: 10px;
+    text-decoration: none;
+}
+#HeaderRegion .forgotInfo:hover {
+    text-decoration: underline;
+}
+#HeaderRegion #signin {
+    color: #FFFFFF;
+}
+#HeaderRegion .headWrp button, #HeaderRegion .headWrp input[type="button"], #HeaderRegion .headWrp input[type="submit"] {
+    overflow: hidden;
+}
+.headWrp .mainNav ul.secLinks li a.censusDays.censusNow {
+    height: 19px;
+    padding: 0;
+    position: relative;
+    width: 147px;
+}
+.headWrp .mainNav ul.secLinks li a.censusDays.censusNow span {
+    display: none;
+}
+.headWrp .mainNav ul.secLinks li a.censusDays.censusNow .censusImg {
+    background-image: url("/webparts/header/i/1940census.png");
+    display: inline;
+    height: 28px;
+    left: 0;
+    position: absolute;
+    top: -4px;
+    width: 147px;
+}
+.headWrp .mainNav ul.secLinks li a.censusDays.censusNow:hover .censusImg {
+    background-position: 0 -28px;
+}
+.headWrp .mainNav ul.secLinks li a.censusDays.censusNow:active .censusImg, .headWrp .mainNav ul.secLinks li a.censusDays.censusNow:focus .censusImg {
+    background-position: 0 -56px;
+}
+.headWrp .mainNav ul.secLinks li a.gift {
+    height: 19px;
+    padding: 0;
+    position: relative;
+    width: 147px;
+}
+.headWrp .mainNav ul.secLinks li a.gift span {
+    display: none;
+}
+.headWrp .mainNav ul.secLinks li a.gift .giftImg {
+    background-image: url("/webparts/header/i/gift-memberships.png");
+    display: inline;
+    height: 28px;
+    left: 0;
+    position: absolute;
+    top: -4px;
+    width: 147px;
+}
+.headWrp .mainNav ul.secLinks li a.gift:hover .giftImg {
+    background-position: 0 -28px;
+}
+.headWrp .mainNav ul.secLinks li a.giftactive .giftImg, .headWrp .mainNav ul.secLinks li a.gift:focus .giftImg {
+    background-position: 0 -56px;
+}
+#HeaderRegion #whatsnewhdr {
+    background-color: #E7EEF6;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    color: #685E48;
+    cursor: pointer;
+    font-size: 13px;
+    padding: 3px 10px 8px;
+    position: relative;
+}
+#HeaderRegion #whatsnewhdr span {
+    vertical-align: middle;
+}
+#HeaderRegion #whatsnewhdrlink {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+}
+#HeaderRegion #whatsnewhdrlink a {
+    color: #445708;
+}
+#HeaderRegion #whatsnewtriangle {
+    -moz-border-bottom-colors: none;
+    -moz-border-end-style: dashed !important;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: transparent -moz-use-text-color transparent #E7EEF6;
+    border-image: none;
+    border-style: solid none solid solid;
+    border-width: 8px 0 8px 8px;
+    display: block;
+    font-size: 0;
+    height: 0;
+    line-height: 0;
+    position: absolute;
+    right: -8px;
+    top: 6px;
+    width: 0;
+}
+#HeaderRegion #whatsnewtriangle:after {
+    box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.2) inset;
+    content: "";
+    display: block;
+    height: 9px;
+    left: -5px;
+    position: relative;
+    top: 2px;
+    transform: rotate(-45deg);
+    width: 9px;
+}
+.hideNavigation .ieGrad, .hideNavigation .userControls {
+    display: none !important;
+}
+.hideNavigation #Hdr_LogoWrp {
+    position: relative;
+}
+.hideNavigation #Hdr_LogoWrp:before {
+    bottom: 0;
+    content: "";
+    display: block;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+#responsiveSubMenu, #profileButton, #acctButton, #helpInsertLO, #subInsertLO, #helpInsert, #subInsert, .fader {
+    display: none;
+}
+.isOpenMenu + .listWrpr {
+    display: block !important;
+}
+.r #HeaderRegion #Hdr_Tabs > li > a {
+    cursor: pointer;
+}
+.isHidden {
+    display: none !important;
+}
+.r .headWrp {
+    width: 100%;
+}
+.r .headWrp .mainNav {
+    border-left: 0 none;
+    border-radius: 0 0 0 0;
+    border-right: 0 none;
+}
+.r #HeaderRegion .tabHome {
+    border-radius: 0 0 0 0;
+}
+.r #Hdr_Pills {
+    position: relative;
+}
+.r #Hdr_Pills > li {
+    display: none;
+}
+.r #Hdr_Pills > li#responsiveSubMenu {
+    border-bottom: 1px solid #B3A485;
+    display: inline;
+    left: 0;
+    margin: 0;
+    top: 0;
+}
+.r #Hdr_Pills > li#responsiveSubMenu a {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: -moz-use-text-color #B3A485 -moz-use-text-color -moz-use-text-color;
+    border-image: none;
+    border-radius: 0 0 0 0;
+    border-style: none solid none none;
+    border-width: 0 1px 0 0;
+    box-shadow: 0 1px rgba(255, 255, 255, 0.6) inset, 1px 0 rgba(255, 255, 255, 0.3) inset, -1px 0 rgba(255, 255, 255, 0.3) inset;
+    color: #43540D;
+    display: block;
+    font-size: 13px;
+    height: 31px;
+    line-height: 30px;
+    padding: 0 22px 0 7px;
+    position: relative;
+    text-decoration: none;
+    text-shadow: 0 1px rgba(255, 255, 255, 0.75);
+}
+.r #Hdr_Pills > li#responsiveSubMenu a:after {
+    border-color: #43540D transparent -moz-use-text-color;
+    border-style: solid solid none;
+    border-width: 4px 4px 0;
+    content: "";
+    display: inline-block;
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    right: 8px;
+    top: 14px;
+    vertical-align: middle;
+}
+.r #Hdr_Pills > #responsiveSubMenu:first-child:nth-last-child(n+3) ~ li {
+    clear: left;
+    float: left;
+    left: -1px;
+    margin: 0;
+    position: relative;
+    z-index: 1;
+}
+.r #Hdr_Pills > #responsiveSubMenu:first-child:nth-last-child(n+3) ~ li a {
+    border-color: -moz-use-text-color #B3A485 #B3A485;
+    border-radius: 0 0 0 0;
+    border-top: 0 none;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3);
+    font-weight: 400;
+    overflow: hidden;
+    padding: 7px 10px;
+    text-overflow: ellipsis;
+    text-shadow: 0 1px rgba(255, 255, 255, 0.75);
+    white-space: nowrap;
+    width: 122px;
+}
+.r #Hdr_Pills > #responsiveSubMenu:first-child:nth-last-child(n+3) ~ li a:hover {
+    background-color: #AEBB23;
+    background-image: none;
+    color: #FFFFFF;
+    text-shadow: none;
+}
+.r #Hdr_Pills:hover > #responsiveSubMenu {
+    background: none repeat scroll 0 0 #FCFFF3;
+}
+.r #Hdr_Pills:hover > #responsiveSubMenu:first-child:nth-last-child(n+3) ~ li {
+    background: none repeat scroll 0 0 #FCFFF3;
+    display: block;
+}
+.r #Hdr_Pills > #responsiveSubMenu:first-child:nth-last-child(n+3) ~ li:last-child, .r #Hdr_Pills > #responsiveSubMenu:first-child:nth-last-child(n+3) ~ li:last-child a {
+    border-radius: 0 0 4px 4px;
+}
+.r .headWrp .mainNav ul.secLinks li a.gift .giftImg {
+    top: 3px;
+}
+.r #Hdr_Pills > li#responsiveSubMenu:only-child, .r #Hdr_Pills > li#responsiveSubMenu:first-child:nth-last-child(2) {
+    display: none;
+}
+.r #Hdr_Pills > li#responsiveSubMenu:first-child:nth-last-child(2) + li {
+    display: block;
+}
+.r .headWrp.loggedIn .userControls .acctDrop .acctNoteArrow {
+    display: block;
+}
+.r .headWrp .loginBox .acctNoteArrow {
+    right: 25px;
+}
+.r .headWrp .loginBox .ancUser, .r .headWrp .loginBox .ancPass {
+    font-size: 16px;
+}
+.r .headWrp .clearfix:after {
+    display: none;
+}
+.r #HdrContainer, .r #HeaderRegion {
+    max-width: 767px;
+    width: 100%;
+    margin-top: 5px;
+}
+.r #HeaderRegion {
+    background-color: #EDEBE0;
+    background-image: linear-gradient(#EDEBE0, #E2E0CF);
+    border-bottom: 1px solid #C8C0A4;
+    z-index: 1001;
+}
+.r .headWrp .ieGrad {
+    height: 45px;
+    left: 0;
+    position: absolute;
+    top: 0;
+}
+.r #HeaderRegion .headWrp.loggedOut #Hdr_LogoWrp {
+    right: 182px;
+}
+.r #HeaderRegion .headWrp #Hdr_LogoWrp.noMenu {
+    left: 0;
+}
+.r #HeaderRegion .headWrp #Hdr_LogoWrp {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.17), 0 1px rgba(255, 255, 255, 0.6) inset, 1px 0 rgba(255, 255, 255, 0.3) inset, -1px 0 rgba(255, 255, 255, 0.3) inset;
+    left: 55px;
+    position: absolute;
+    right: 55px;
+    top: 0;
+}
+.r .headWrp #Hdr_LogoWrp > a {
+    width: 197px;
+}
+.r .headWrp .localLeaf {
+    display: none;
+}
+.r #HeaderRegion #menuButton {
+    background: none repeat scroll 0 0 transparent;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.17), 0 1px rgba(255, 255, 255, 0.6) inset, 1px 0 rgba(255, 255, 255, 0.3) inset, -1px 0 rgba(255, 255, 255, 0.3) inset;
+    cursor: pointer;
+    display: block;
+    float: left;
+    height: 16px;
+    margin: auto;
+    padding: 15px 16px 14px;
+    position: relative;
+    width: 22px;
+    z-index: 3;
+}
+.r #HeaderRegion #menuButton.isActive, .r #HeaderRegion .headWrp.loggedOut .topSec .acctNote #showSignIn.isActive, .r #HeaderRegion .headWrp .topSec .userControls .acctDrop:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3) inset;
+}
+.r #HeaderRegion .menuBar {
+    background: none repeat scroll 0 0 #566C11;
+    border-bottom: 1px solid #FFFFFF;
+    border-top: 1px solid #2F3B09;
+    display: block;
+    height: 2px;
+    margin-bottom: 2px;
+    width: 22px;
+}
+.r #HeaderRegion .menuBar:last-child {
+    margin-bottom: 0;
+}
+.r .headWrp .ieGrad .mainNav {
+    background-color: #FFFFFF;
+    background-image: none;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3);
+    display: none;
+    height: auto;
+    left: 8px;
+    padding: 6px 0;
+    position: absolute;
+    top: 49px;
+    width: 302px;
+    z-index: 1001;
+}
+.r .headWrp .ieGrad .mainNav.isShown {
+    display: block;
+    z-index: 1002;
+}
+.r .headWrp .ieGrad .mainNav .menuContArrow {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: transparent transparent #B3A485;
+    border-image: none;
+    border-right: 10px solid transparent;
+    border-style: solid;
+    border-width: 0 10px 10px;
+    display: block;
+    font-size: 0;
+    height: 0;
+    left: 9px;
+    line-height: 0;
+    position: absolute;
+    top: -10px;
+    width: 0;
+}
+.r .headWrp .ieGrad .mainNav .menuContArrow:after {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: transparent transparent #FFFFFF;
+    border-image: none;
+    border-right: 10px solid transparent;
+    border-style: solid;
+    border-width: 0 10px 10px;
+    content: "";
+    font-size: 0;
+    height: 0;
+    line-height: 0;
+    position: absolute;
+    right: -10px;
+    top: 1px;
+    width: 0;
+}
+.r .headWrp .ieGrad .mainNav .gLinks {
+    -moz-box-sizing: border-box;
+    width: 100%;
+}
+.r .headWrp .ieGrad .mainNav .gLinks > li {
+    float: none;
+    height: auto;
+}
+.r .headWrp .ieGrad .mainNav .gLinks > li, .r .headWrp .ieGrad .mainNav .secLinks > li {
+    border-bottom: 1px solid #E6E6E6;
+}
+.r .headWrp .ieGrad .mainNav .gLinks > li > a, .r .headWrp .ieGrad .mainNav .secLinks > li > a {
+    -moz-box-sizing: border-box;
+    border: medium none;
+    border-radius: 0 0 0 0;
+    box-shadow: none;
+    color: #445708;
+    font-size: 16px;
+    height: 48px;
+    line-height: 48px;
+    padding: 0 24px;
+    text-shadow: none;
+    width: 100%;
+}
+.r .headWrp .ieGrad .mainNav .gLinks > li > a:hover, .r .headWrp .ieGrad .mainNav .secLinks > li > a:hover {
+    background-color: transparent;
+    background-image: none;
+    box-shadow: none;
+    filter: none;
+    text-shadow: none;
+}
+.r .headWrp .ieGrad .mainNav .gLinks li > a:active, .r .headWrp .ieGrad .mainNav .gLinks li > a:focus {
+    background-color: transparent;
+    background-image: none;
+    box-shadow: none;
+    text-shadow: none;
+}
+.r .headWrp .ieGrad .mainNav .gLinks > li > a > span {
+    border-top-color: #445708;
+    float: right;
+    margin-top: 22px;
+}
+.r .headWrp .ieGrad .mainNav .gLinks > li > a.isExpanded > span {
+    border-bottom: 4px solid #445708;
+    border-top-width: 0;
+}
+.r .headWrp .ieGrad .mainNav .gLinks > li > .selected > span {
+    border-top-color: #FFFFFF;
+}
+.r .headWrp .ieGrad .mainNav .gLinks > li > .selected.isExpanded > span {
+    border-bottom-color: #FFFFFF;
+}
+.r .headWrp .ieGrad .mainNav .gLinks > li > div {
+    height: auto;
+    left: 0;
+    position: relative;
+}
+.r .headWrp .ieGrad .mainNav .secLinks {
+    float: left;
+    height: auto;
+    width: 100%;
+}
+.r .headWrp .ieGrad .mainNav .secLinks li {
+    margin-left: 0;
+    margin-top: 0;
+    width: 100%;
+}
+.r .headWrp .ieGrad .mainNav .secLinks li:last-child {
+    border-bottom: medium none;
+}
+.r .headWrp .ieGrad .mainNav .secLinks li > a.gift {
+    display: block;
+    margin: auto;
+}
+.r .headWrp .ieGrad .mainNav .secLinks li > a.gift > .giftImg {
+    display: none;
+}
+.r .headWrp .ieGrad .mainNav .secLinks li > a.gift > .giftReplacement {
+    display: inline;
+}
+.r .fader.isShown {
+    background-color: transparent;
+    bottom: -1px;
+    display: block;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+}
+.r #HeaderRegion .headWrp .ieGrad .mainNav .selected, .r #HeaderRegion .headWrp .ieGrad .mainNav .selected:hover {
+    background-color: #BAB5AB;
+    background-image: none;
+    box-shadow: none;
+    color: #FFFFFF;
+    margin: 0;
+    text-shadow: none;
+}
+.r .headWrp .ieGrad .mainNav .listWrpr {
+    background-color: #F9F9F9;
+    border-radius: 0 0 0 0;
+    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.15) inset;
+    display: none;
+    width: 100%;
+}
+.r .headWrp .ieGrad .mainNav .innerListWrpr, .r .headWrp .ieGrad .mainNav .innerListWrpr .ddList, .r .headWrp .ieGrad .mainNav .innerListWrpr .ddList li, .r .headWrp .ieGrad .mainNav .innerListWrpr .ddList li a {
+    display: none;
+}
+.r .headWrp .ieGrad .mainNav .listWrpr.isExpanded, .r .headWrp .ieGrad .mainNav .listWrpr.isExpanded .innerListWrpr, .r .headWrp .ieGrad .mainNav .listWrpr.isExpanded .innerListWrpr .ddList, .r .headWrp .ieGrad .mainNav .listWrpr.isExpanded .innerListWrpr .ddList li, .r .headWrp .ieGrad .mainNav .listWrpr.isExpanded .innerListWrpr .ddList li a {
+    display: block;
+}
+.r .headWrp .ieGrad .mainNav .listWrpr.isExpanded .innerListWrpr .ddList li a {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+}
+.r .headWrp .ieGrad .mainNav .innerListWrpr, .r .headWrp .ieGrad .mainNav .ddList, .r .headWrp .ieGrad .mainNav .ddList .lastLi, .r .headWrp .ieGrad .mainNav .ddList .lastLi > a {
+    -moz-box-sizing: border-box;
+    border-radius: 0 0 0 0;
+    border-width: 0;
+    max-width: 304px;
+    width: 100%;
+}
+.r .headWrp .ieGrad .mainNav .ddList .lastLi > a {
+    height: 56px;
+    line-height: 42px;
+}
+.r .headWrp .ieGrad .mainNav .ddList li {
+    background-color: transparent;
+    border-bottom: 1px dotted #E6E6E6;
+}
+.r .headWrp .ieGrad .mainNav .ddList li:last-child {
+    border-bottom: medium none;
+}
+.r .headWrp .ieGrad .mainNav .ddList li a {
+    border-width: 0;
+    color: #445708;
+    font-size: 16px;
+    height: 42px;
+    line-height: 42px;
+    word-wrap: break-word;
+}
+.r .headWrp .ieGrad .mainNav .ddList li a:hover {
+    background-color: transparent;
+}
+.r .headWrp .ieGrad .mainNav .ddList li a:not(.main_opener) {
+    padding-left: 32px;
+}
+.r .headWrp .ieGrad .mainNav .listWrpr .innerListWrpr {
+    box-shadow: none;
+}
+.r .headWrp .topSec .ieGrad .mainNav .main_arrow {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: #445708 transparent transparent;
+    border-image: none;
+    border-right: 6px solid transparent;
+    border-style: solid;
+    border-width: 6px 6px 0;
+    cursor: pointer;
+    font-size: 0;
+    line-height: 0;
+    top: 10px;
+}
+.r .headWrp .topSec .userControls.textsml {
+    display: block;
+    height: 45px;
+    margin: 0;
+    width: 183px;
+}
+.r .headWrp .topSec .acctNote #showSignIn, .r .headWrp .topSec .acctNote ~ li:nth-child(2):not(#liHints) {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.17), 0 1px rgba(255, 255, 255, 0.6) inset, 1px 0 rgba(255, 255, 255, 0.3) inset, -1px 0 rgba(255, 255, 255, 0.3) inset;
+    display: block;
+    height: 100%;
+    margin: 0;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 90px;
+}
+.r .headWrp.loggedOut .topSec .acctNote #showSignIn {
+    border-radius: 0 0 0 0;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.17), 0 1px rgba(255, 255, 255, 0.6) inset, 1px 0 rgba(255, 255, 255, 0.3) inset, -1px 0 rgba(255, 255, 255, 0.3) inset;
+    height: auto;
+    margin: 0;
+    padding: 12px 0;
+    right: -183px;
+}
+.r .headWrp .topSec .acctNote ~ li:nth-child(2) {
+    right: 91px;
+}
+.r #HeaderRegion .headWrp .topSec .userControls li > a {
+    -moz-box-sizing: border-box;
+    border: medium none;
+    border-radius: 0 0 0 0;
+    color: #445708;
+    display: block;
+    font-size: 16px;
+    height: auto;
+    line-height: 48px;
+    padding: 0 24px;
+}
+.r #HeaderRegion .headWrp.loggedOut .topSec .userControls.textsml li > a {
+    background: none repeat scroll 0 0 transparent;
+    border: medium none;
+    box-shadow: none;
+    color: #445708;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.35px;
+    line-height: 21px;
+    margin: 0;
+    overflow: hidden;
+    padding: 12.5px 6px;
+    text-overflow: ellipsis;
+    text-shadow: 0 1px #FFFFFF;
+}
+.r .headWrp .topSec .userControls > li:last-child {
+    display: none;
+}
+.r #helpInsert, .r #subInsert, .r #helpInsertLO, .r .profileInsert {
+    display: block;
+}
+.r .memberProfile {
+    display: none;
+}
+.r #HeaderRegion .headWrp .topSec .userControls li > .acctHelp {
+    display: none;
+}
+.r #HeaderRegion .headWrp .topSec .userControls .acctNote .loginBox {
+    font-size: 13px;
+    font-weight: 500;
+    margin-left: 8px;
+    max-width: 320px;
+    padding: 0;
+    right: -175px;
+    text-align: left;
+    top: 49px;
+    width: 302px;
+    z-index: 1000;
+}
+.r #HeaderRegion .headWrp .topSec .userControls .acctNote .loginBox .acctNoteArrow {
+    right: 26px;
+}
+.r #HeaderRegion .headWrp .topSec .userControls .acctNote .loginBox #loginForm {
+    padding: 24px 24px 12px;
+}
+.r #HeaderRegion .headWrp .topSec .userControls .acctNote .loginBox #loginForm #signin {
+    border-radius: 4px 4px 4px 4px;
+    float: left;
+    font-size: 18px;
+    height: 41px;
+    line-height: 41px;
+    padding: 0 14px;
+}
+.r #HeaderRegion .headWrp .topSec .userControls .acctNote .loginBox #loginForm label {
+    line-height: 13px;
+}
+.r #HeaderRegion .headWrp .topSec .userControls .acctNote .loginBox #loginForm input {
+    font-size: 18px;
+    padding: 3px 5px 4px;
+}
+.r #HeaderRegion .headWrp .topSec .userControls .acctNote .loginBox .submitLogin .forgotInfo {
+    display: block;
+    float: right;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 12px 0;
+}
+.r #HeaderRegion .headWrp .topSec #helpInsertLO, .r #HeaderRegion .headWrp .topSec .userControls .acctNote .loginBox #subInsertLO {
+    border-top: 1px solid #E6E6E6;
+    clear: both;
+    width: 100%;
+}
+.r #HeaderRegion .headWrp .topSec .userControls .acctNote .loginBox #helpInsertLO > a, .r #HeaderRegion .headWrp .topSec .userControls .acctNote .loginBox #subInsertLO > a {
+    -moz-box-sizing: border-box;
+    color: #445708;
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 48px;
+    margin: 0;
+    padding-left: 24px;
+    text-decoration: none;
+    width: 100%;
+}
+.r #HeaderRegion .headWrp .topSec .userControls .acctNote .loginBox .facebook-sso-webpart-spacer-line {
+    margin: auto;
+    width: 85%;
+}
+.r #HeaderRegion .headWrp .topSec .userControls .acctNote .loginBox .facebook-sso-webpart-spacer-line span {
+    text-transform: uppercase;
+}
+.r #HeaderRegion .headWrp .topSec .userControls .acctNote .loginBox #facebook-sso-webpart-region #facebook-sso-webpart-cta {
+    margin-bottom: 0;
+}
+.r #HeaderRegion .headWrp .topSec .userControls .acctNote .loginBox #facebook-sso-webpart-region #facebook-sso-webpart-cta .facebook-sso-webpart-logFbText.facebook-sso-webpart-fbTc {
+    -moz-box-sizing: border-box;
+    display: block;
+    float: left;
+    line-height: 22px;
+    margin-right: 50px;
+    max-width: 246px;
+    padding: 16px 0 12px 24px;
+    text-decoration: none;
+    width: auto;
+    word-wrap: break-word;
+}
+.r #HeaderRegion .headWrp .topSec .userControls .acctNote .loginBox #facebook-sso-webpart-region #facebook-sso-webpart-cta .facebook-sso-webpart-how-it-works {
+    background-color: #566C11;
+    border-radius: 14px 14px 14px 14px;
+    color: rgba(255, 255, 255, 0);
+    display: block;
+    float: right;
+    font-family: Georgia,"Times New Roman",Times,serif;
+    font-size: 12px;
+    height: 16px;
+    line-height: 16px;
+    margin: 18px 24px 0 -40px;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    text-indent: -200%;
+    width: 16px;
+}
+.r #HeaderRegion .headWrp .topSec .userControls .acctNote .loginBox #facebook-sso-webpart-region #facebook-sso-webpart-cta .facebook-sso-webpart-how-it-works:before {
+    color: #FFFFFF;
+    content: "i";
+    left: 0;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    text-indent: 0;
+}
+.r #HeaderRegion .headWrp .topSec .userControls .acctNote .loginBox #facebook-sso-webpart-region #SignOnRegion > li:last-child {
+    clear: both;
+}
+.r #HeaderRegion .headWrp .topSec .userControls .acctNote .loginBox .acom-fb-signin.fb_button.fb_button_medium {
+    clear: both;
+    display: block;
+    height: 22px;
+    margin: 12px auto;
+    width: 65px;
+}
+.r #HeaderRegion .headWrp .topSec .userControls .acctNote .loginBox #fb-sso-login .fb_button {
+    width: 160px;
+}
+.r #HeaderRegion .headWrp .topSec .userControls .acctDrop {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.17), 0 1px rgba(255, 255, 255, 0.6) inset, 1px 0 rgba(255, 255, 255, 0.3) inset, -1px 0 rgba(255, 255, 255, 0.3) inset;
+    display: block;
+    height: 45px;
+    margin: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 54px;
+}
+.r #HeaderRegion .headWrp .topSec .userControls .acctDrop #myAccountLink {
+    z-index: 1000;
+}
+.r #HeaderRegion .headWrp .topSec .userControls .acctDrop #myAccountLink img, .r #HeaderRegion .headWrp .topSec .userControls .acctDrop #myAccountLink em, .r #HeaderRegion .headWrp .topSec .userControls .acctDrop #myAccountLink .accountName {
+    display: none;
+}
+.r #HeaderRegion .headWrp .topSec .userControls #Header_HintsRegion .acctNoteList > li > a {
+    line-height: 24px;
+    padding: 8px 24px;
+}
+.r #HeaderRegion .headWrp .topSec .userControls #hintsText, .r #HeaderRegion .headWrp .topSec .userControls #messagesText {
+    border-radius: 5px 5px 5px 5px;
+    height: 34px;
+    margin-left: 15.5px;
+    margin-right: 15.5px;
+    margin-top: 7px;
+    padding: 8px;
+    width: 34px;
+}
+.r #HeaderRegion .headWrp .topSec .userControls #hintsText {
+    right: -80px;
+}
+.r #HeaderRegion .headWrp .topSec .userControls #messagesText {
+    height: auto;
+    line-height: 0;
+    right: -20px;
+    width: 37px;
+}
+.r #HeaderRegion .headWrp .topSec .userControls #hintsText:active, .r #HeaderRegion .headWrp .topSec .userControls #hintsText:focus, .r #HeaderRegion .headWrp .topSec .userControls #messagesText:active, .r #HeaderRegion .headWrp .topSec .userControls #messagesText:focus {
+    background-color: rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.15) inset;
+}
+.r .headWrp .userControls .noteNum {
+    top: -3px;
+}
+.r #HeaderRegion .headWrp .topSec .userControls > li:nth-child(4) {
+    display: none;
+}
+.r #HeaderRegion .headWrp .topSec .userControls #Hdr_Hints_ShakyLeaf {
+    display: none !important;
+}
+.r #HeaderRegion .headWrp .topSec .userControls #Hdr_Hints_Icon {
+    background-image: url("/webparts/header/i/hints/hint32.png");
+    background-position: left top;
+    background-size: 23px 25px;
+    display: block;
+    height: 25px;
+    left: -2px;
+    position: relative;
+    top: -4px;
+    width: 23px;
+}
+.r #HeaderRegion .headWrp .topSec .userControls #Hdr_Messages_Icon {
+    display: none;
+}
+.r #HeaderRegion .headWrp .topSec .userControls .accountMessages .noteImg {
+    background-image: url("/webparts/header/i/messages/message32.png");
+    background-position: left top;
+    background-size: 21px 17px;
+    height: 17px;
+    left: -2px;
+    top: 1px;
+    width: 21px;
+}
+.r #HeaderRegion .headWrp .topSec .userControls #Hdr_HintsCount, .r #HeaderRegion .headWrp .topSec .userControls #Hdr_MessagesCount {
+    text-shadow: none;
+}
+.r #HeaderRegion .headWrp .topSec .userControls #moreHints {
+    left: -153px;
+    top: 49px;
+    z-index: 1000;
+}
+.r #HeaderRegion .headWrp .topSec .userControls #moreHints .acctNoteArrow {
+    right: 63px;
+}
+.r #HeaderRegion .headWrp .topSec .userControls #moreMessages {
+    left: -165px;
+    top: 49px;
+    z-index: 1000;
+}
+.r #HeaderRegion .headWrp .topSec .userControls #moreMessages .acctNoteArrow {
+    right: 112px;
+}
+.r #HeaderRegion #Header_HintsRegion .acctNoteList li, .r #HeaderRegion #Header_MessagesRegion .acctNoteList li {
+    border-bottom: 1px solid #E6E6E6;
+    height: auto;
+}
+.r #HeaderRegion #Header_HintsRegion .acctNoteList li:last-child, .r #HeaderRegion #Header_MessagesRegion .acctNoteList li:last-child {
+    border-bottom: medium none;
+}
+.r #HeaderRegion .userControls .acctNoteContent div#Header_HintsRegion > a, .r #HeaderRegion .userControls .acctNoteContent div#Header_MessagesRegion > a {
+    padding: 16px 0;
+}
+.r #HeaderRegion .headWrp .userControls #moreMessages .acctMsgImg {
+    display: none;
+}
+.r #HeaderRegion .headWrp .userControls .acctNoteContent .acctNoteList li:hover a {
+    background-color: transparent;
+    box-shadow: none;
+}
+.r #HeaderRegion .headWrp .userControls .acctNoteContent .acctMsgContent, .r #HeaderRegion .headWrp .userControls .acctNoteContent .acctMsgInfo {
+    display: none;
+}
+.r #HeaderRegion .headWrp .topSec .userControls #acctInsert .profileImg {
+    height: 40px;
+    margin-top: 0;
+    vertical-align: middle;
+    width: 30px;
+}
+.r #HeaderRegion .headWrp .topSec .userControls #acctInsert .accountName {
+    color: #445708;
+    font-size: 16px;
+    line-height: 40px;
+    text-decoration: none;
+    vertical-align: middle;
+    word-wrap: break-word;
+}
+.r #HeaderRegion .headWrp .topSec .userControls .acctDrop #moreAcct {
+    padding: 8px 0 4px;
+    right: 8px;
+    top: 49px;
+    width: 302px;
+}
+.r #HeaderRegion .headWrp .topSec .userControls #moreAcct > ul > li {
+    height: auto;
+}
+.r #HeaderRegion .headWrp .topSec .userControls #moreAcct > ul > li:last-child {
+    border-bottom: medium none;
+}
+.r #HeaderRegion .headWrp .topSec .userControls #moreAcct > ul > li > a {
+    padding: 2px 24px;
+}
+.r #HeaderRegion .headWrp .topSec .userControls #moreAcct > ul > li #Hdr_ProfilePage_Link:hover {
+    background: none repeat scroll 0 0 transparent;
+    text-decoration: none;
+}
+.r #HeaderRegion .headWrp .topSec .userControls #moreAcct > ul > li > a:hover {
+    background-color: transparent;
+    color: #445708;
+    text-shadow: none;
+}
+.r #HeaderRegion .headWrp .topSec .userControls #moreAcct > ul > li.acctBar {
+    height: 0;
+    margin: 4px 0 0;
+    width: 100%;
+}
+.r #HeaderRegion .headWrp .topSec .userControls #moreAcct > .acctNoteArrow {
+    right: 9px;
+}
+.r #HeaderRegion .headWrp .topSec .userControls #helpInsert .acctHelp:hover {
+    text-decoration: none;
+}
+.r #HeaderRegion .headWrp .topSec .userControls #subInsert {
+    height: 21px;
+}
+.r #HeaderRegion .headWrp .topSec .userControls #subInsert > a {
+    border-radius: 0 0 0 0;
+    display: block;
+    text-align: left;
+}
+.r #HeaderRegion #acctButton {
+    background-image: url("/webparts/header/i/profile@2x.png");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 22px 22px;
+    display: inline-block;
+    height: 100%;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: -1px;
+    width: 100%;
+}
+.r #HeaderRegion .headWrp.loggedOut .topSec #Hdr_LogoWrp, .r #HeaderRegion .headWrp .topSec #Hdr_LogoWrp {
+    right: 55px;
+}
+.r #HeaderRegion .headWrp .topSec #Hdr_LogoWrp > a img {
+    max-height: 25px;
+    max-width: 173px;
+}
+.r #HeaderRegion .userControls > li:nth-child(2):not(#liHints), .r #HeaderRegion .headWrp .topSec .userControls .acctNote .downArrow {
+    display: none;
+}
+.r #HeaderRegion .headWrp .topSec .userControls .acctNote #showSignIn {
+    color: transparent;
+    display: block;
+    font-size: 0;
+    height: 100%;
+    line-height: 0;
+    margin: 0;
+    padding: 0;
+    right: 0;
+    width: 100%;
+    z-index: 50;
+}
+.r #HeaderRegion .headWrp .topSec .userControls .acctNote .loginBox {
+    right: 8px;
+}
+.r #HeaderRegion .headWrp .topSec .userControls .acctNote .loginBox .acctNoteArrow {
+    right: 9px;
+}
+.r #HeaderRegion #loginForm {
+    width: 256px;
+}
+.r #HeaderRegion #fader p {
+    display: none;
+}
+.r #HeaderRegion .userControls .acctNote .loginBox #facebook-sso-webpart-region #facebook-sso-webpart-login ~ li:nth-child(2) {
+    display: block;
+}
+.r #HeaderRegion .headWrp.loggedOut .topSec #Hdr_LogoWrp > a {
+    display: block;
+    margin-left: 18px;
+    margin-top: 11px;
+    width: 173px;
+}
+.r #HeaderRegion .headWrp.loggedOut .topSec .userControls {
+    width: 54px;
+}
+.r #HeaderRegion .headWrp.loggedOut .topSec .userControls .acctNote {
+    width: 53px;
+}
+.r #HeaderRegion .headWrp.loggedOut .topSec .userControls .acctNote:first-child {
+    height: 45px;
+}
+.r #HeaderRegion .headWrp.loggedOut #profileButton {
+    background-image: url("/webparts/header/i/profile@2x.png");
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: 22px 21px;
+    display: inline-block;
+    height: 21px;
+    left: 17px;
+    margin: 12.5px auto;
+    position: absolute;
+    top: -1px;
+    width: 22px;
+}
+.r #subInsertLO {
+    display: block;
+}
+.r #HeaderRegion #Hdr_LogoWrp > a {
+    display: none;
+}
+.r #HeaderRegion .headWrp .topSec .userControls {
+    width: 100%;
+}
+.r #HeaderRegion .headWrp .topSec .userControls .acctNote:first-child {
+    width: 100%;
+}
+.r #HeaderRegion .headWrp.loggedIn .topSec .userControls .acctNote:first-child > #profileButton {
+    display: none;
+}
+.r #HeaderRegion .headWrp .topSec .userControls .acctNote #messagesText {
+    left: 50%;
+    margin-left: -42.5px;
+    margin-right: -15.5px;
+    right: 50%;
+}
+.r #HeaderRegion .headWrp .topSec .userControls #liHints {
+    left: 0;
+    margin: 0;
+    position: absolute;
+    right: 0;
+    width: 100%;
+}
+.r #HeaderRegion .headWrp .topSec .userControls #liHints #hintsText {
+    left: 50%;
+    margin-left: 11.5px;
+    margin-right: -15.5px;
+    right: 50%;
+}
+.r #HeaderRegion .headWrp .topSec .userControls .acctNote #moreMessages, .r #HeaderRegion .headWrp .topSec .userControls .acctNote #moreHints {
+    left: 8px;
+    right: 8px;
+    width: auto;
+}
+.r #HeaderRegion .headWrp .topSec .userControls .acctNote #moreMessages .acctNoteArrow {
+    left: 50%;
+    margin-left: -37.5px;
+    margin-right: -15.5px;
+    right: 50%;
+}
+.r #HeaderRegion .headWrp .topSec .userControls .acctNote #moreHints .acctNoteArrow {
+    left: 50%;
+    margin-left: 16.5px;
+    margin-right: -15.5px;
+    right: 50%;
+}
+.r #HeaderRegion .headWrp .userControls .noNotes {
+    overflow: hidden;
+}
+.r #HeaderRegion .headWrp.headerInstitution #Hdr_LogoWrp > a {
+    -moz-box-sizing: border-box;
+    display: block;
+    height: 100%;
+    margin-top: 0;
+    padding-top: 9px;
+}
+.r #HeaderRegion .headWrp.headerInstitution .userControls.textsml {
+    display: none;
+}
+.r #HeaderRegion .headWrp.headerInstitution #Hdr_LogoWrp {
+    right: 0;
+}
+.r #HeaderRegion .headWrp.headerInstitution #Hdr_LogoWrp > a {
+    width: auto;
+}
+.r #HeaderRegion .headWrp.headerInstitution #Hdr_LogoWrp > a > img {
+    max-width: 100%;
+}
+.headWrp .localLogo .localLeaf {
+    background-image: url("http://c.mfcreative.com/webparts/header/i/leaves@2x.png");
+}
+.headWrp .userControls .accountHints .noteImg {
+    background-image: url("http://c.mfcreative.com/webparts/header/i/hints/hint16@2x.png");
+}
+.headWrp .userControls .accountMessages .noteImg {
+    background-image: url("http://c.mfcreative.com/webparts/header/i/messages/message16@2x.png");
+}
+.r #HeaderRegion .headWrp .topSec .userControls #Hdr_Hints_Icon {
+    background-image: url("http://c.mfcreative.com/webparts/header/i/hints/hint32@2x.png");
+}
+.r #HeaderRegion .headWrp .topSec .userControls .accountMessages .noteImg {
+    background-image: url("http://c.mfcreative.com/webparts/header/i/messages/message32@2x.png");
+}

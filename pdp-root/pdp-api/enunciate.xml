@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<enunciate label="PDP API" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:noNamespaceSchemaLocation="http://enunciate.codehaus.org/schemas/enunciate-1.26.xsd">
+    <namespaces>
+        <namespace id="xml" uri="http://www.w3.org/XML/1998/namespace"/>
+    </namespaces>
+
+    <services>
+        <rest defaultRestSubcontext="/api"/>
+    </services>
+    <webapp>
+        <!--<globalServletFilter name="securityFilter" classname="com.codeitek.pdp.api.auth.RESTAuthenticationFilter"/>-->
+    </webapp>
+    <modules>
+        <docs splashPackage="com.codeitek.pdp" title="PDP Portal API" copyright="codeitek.com"/>
+        <amf disabled="true"/>
+        <c disabled="true"/>
+        <csharp disabled="true"/>
+        <cxf disabled="true"/>
+        <gwt disabled="true"/>
+        <java-client disabled="false"/>
+        <obj-c disabled="true"/>
+        <spring-app springVersion="3.1.2.RELEASE">
+            <!--<springImport uri="classpath:application-beans.xml"/>-->
+            <springImport uri="classpath:api-context.xml"/>
+            <!--<springImport uri="classpath:security-context.xml"/>-->
+        </spring-app>
+    </modules>
+</enunciate>
